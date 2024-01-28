@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    font-family: Raleway, helvetica, sans-serif;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+header, footer {
+    background-color: #31572C;
+    color: #FAF3DD;
+}
+
+header {
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    background-color: #FAF3DD;
+    color: #32292F;
+}
+
+h2, h3 {
+    padding: .3rem;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+p {
+    font-family: Merriweather;
+    font-size: 16px;
+    padding: .5rem;
+}
+
+footer > p {
+    font-family: Raleway, helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.card ol{
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    font-family: Merriweather;
+}
+.card {
+    padding: 1rem;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #C8D5B9;
+    color: #32292F;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #31572C;
+    color: #FAF3DD;
+}
+
+.secondary {
+    background-color: #FAF3DD;
+    color: #32292F;
+}
+
+.accent1 {
+    background-color: #32292F;
+    color: #FAF3DD;
+}
+
+.accent2{
+    background-color: #C8D5B9;
+    color: #32292F;
+}
