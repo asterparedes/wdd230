@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Chamber of Commerce Website</title>
+        <title>The Chamber of Commerce Home Page</title>
         <meta name="description" content="The Chamber of Commerce Home Page. This home page welcomes the visitor with key information and invitations to engage with the organization.">
         <meta name="author" content="Aster Paredes Morales">
         <link rel="stylesheet" href="styles/normalize.css">
@@ -20,9 +20,14 @@
         <meta property="og:url" content="https://asterparedes.github.io/wdd230/chamber">
     </head>
     <body>
+        <div id="mode">
+            🌑
+        </div>
         <header>
-            <img class="logo" src="images/inglewood-chamber.png" alt="Inglewood Chamber of Commerce Logo">
-            <h1>Inglewood Chamber of Commerce</h1>
+            <div>
+                <img class="logo" src="images/inglewood-chamber.png" alt="Inglewood Chamber of Commerce Logo">
+            </div>
+            <h1>Inglewood<span class="title-text">Chamber of Commerce</span></h1>
         </header>
         <a id="menu" href="#"></a>
             <nav class="navigation">
@@ -101,6 +106,7 @@
             <p id="lastModified"></p>
         </footer>
         <script src="scripts/main.js"></script>
+        <script src="scripts/mode.js"></script>
     </body>
 
 </html>
