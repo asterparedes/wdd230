@@ -1,4 +1,12 @@
 @media screen and (min-width: 1300px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    h1::first-line {
+        font-size: 70px;
+    }
+    
     #menu {
         display: none;
     }
