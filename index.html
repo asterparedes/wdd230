@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans:wght@700&display=swap" rel="stylesheet">
     <meta property="og:title" content="WDD 230 Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://media.cntraveler.com/photos/6206d36c12ba7b007f658e22/16:9/w_1280,c_limit/Exterior---Day---Forum-Club-EntranceW-(3).jpg">
@@ -17,7 +20,11 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Profile picture">
+        <div class="profile-picture">
+            <picture>
+                <img src="images/profile.webp" alt="Profile picture" width="400" height="250">
+            </picture>
+        </div>
         <h1>Aster Paredes Morales</h1>
     </header>
     <a id="menu" href="#"></a>
@@ -31,6 +38,15 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-mobile.webp"></source>
+                <img srcset="images/hero-large.webp" alt="San Diego Temple" width="960" height="500">
+            </picture>
+        </div>
+        <div class="hero-text">
+            <p>San Diego Temple</p>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
