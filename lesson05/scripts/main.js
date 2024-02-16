@@ -14,6 +14,7 @@ button.addEventListener('click', () => {
 
         deleteButton.addEventListener('click', () => {
             list.removeChild(listChapter);
+            input.focus();
         });
         
         input.focus();
@@ -32,6 +33,7 @@ button.addEventListener('click', () => {
 
     // deleteButton.addEventListener('click', () => {
     //     list.removeChild(listChapter);
+    //     input.focus();
     // });
     
     // input.focus();

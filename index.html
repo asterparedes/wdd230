@@ -22,7 +22,8 @@
     <header>
         <div class="profile-picture">
             <picture>
-                <img src="images/profile.webp" alt="Profile picture" width="400" height="250">
+                <source media="(max-width: 100px)" srcset="images/profile-mobile.webp">
+                <img src="images/profile-large.webp" alt="Profile picture" width="150" height="200">
             </picture>
         </div>
         <h1>Aster Paredes Morales</h1>
@@ -40,13 +41,13 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(max-width: 400px)" srcset="images/hero-mobile.webp"></source>
-                <img srcset="images/hero-large.webp" alt="San Diego Temple" width="960" height="500">
+                <source media="(max-width: 400px)" srcset="images/san-diego-temple-mobile.webp">
+                <img src="images/san-diego-temple.webp" alt="San Diego Temple" width="960" height="400">
             </picture>
-        </div>
-        <div class="hero-text">
-            <p>San Diego Temple</p>
-        </div>
+            <div class="herotext">
+                <p>San Diego Temple</p>
+            </div>
+        </div> 
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -76,7 +77,7 @@
             <div class="weather">Sunny Weather</div>
             <div class="page-visits">Page Visits : </div>
         </section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26483.455692172636!2d-118.3576726772461!3d33.93001647959153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706239937751!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26483.455692172636!2d-118.3576726772461!3d33.93001647959153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706239937751!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
     </main>
     <footer>
         <p>&copy;<span id="year"></span>  Aster Paredes Morales | California</p>

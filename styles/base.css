@@ -1,8 +1,7 @@
 :root {
     --primary-color: #FFEE93;
     --secondary-color: #2B2D42;
-    --accent1-color: #E56B6F;
-    --accent2-color: #FFC09F;
+    --accent1-color: #FFC09F;
     --heading-font: "Alegreya Sans", Helvetica, sans-serif;
     --paragraph-font: Alegreya, Georgia, serif;
     --nav-font: Alegreya, Georgia, serif;
@@ -42,11 +41,11 @@ header {
     width: 100px;
     height: auto;
     object-fit: cover;
-    padding-top: 1rem;
+    padding: .5rem;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 30px;
     padding: 1rem;
 }
 
@@ -92,23 +91,18 @@ nav {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
+.navigation a.active,
 .navigation a:hover{
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
+    color: var(--primary-color);
     font-weight: 700;
+    text-decoration: underline;
 }
 
 .open a {
     display: block;
-}
-
-.active {
-    background-color: var(--accent1-color);
-    color:var(--secondary-color);
-    text-decoration: underline;
 }
 
 main {
@@ -119,23 +113,33 @@ main {
     margin: auto;
 }
 
+.hero {
+	position: relative;
+}
+
 .hero img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
-.hero-text p {
-    font-size: 30px;
-    font-family: var(--paragraph-font);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: .5rem 1rem;
-    margin: 1rem;
-    border: 1px solid var(--primary-color);
-    position: static;
-    top: 10rem;
-    left: 1rem;
-    float: left;
+.herotext {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #7080c7);
+	border: 1px solid var(--secondary-color);
+	padding: 1rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.80;
+}
+
+.herotext p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family: var(--heading-font);
 }
 
 section {
