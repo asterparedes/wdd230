@@ -21,12 +21,13 @@
     </head>
     <body>    
         <header>
-            <div class="chamber-logo">
+            <div class="logo">
                 <picture>
-                    <img src="images/chamber-logo.webp" alt="Inglewood Chamber of Commerce Logo" width="500" height="450">
+                    <source srcset="images/chamber-logo.webp" media="(max-width: 200px)">
+                    <img src="images/chamber-logo-large.webp" alt="Inglewood Chamber of Commerce Logo" width="300" height="250">
                 </picture>
             </div>
-            <h1>Inglewood <br>Chamber of Commerce</h1>
+            <h1>Inglewood <br> Chamber of Commerce</h1>
         </header>
         <a id="menu" href="#"></a>
             <nav class="navigation">
@@ -42,11 +43,11 @@
             <div class="hero-card">
                 <picture>
                     <source srcset="images/chamber-hero-small.webp" media="(max-width: 500px)">
-                    <source srcset="images/chamber-hero-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/chamber-hero-large.webp" alt="Having a meeting" width="2" height="1">
+                    <source srcset="images/chamber-hero-medium.webp" media="(max-width: 800px)">
+                    <img src="images/chamber-hero-large.webp" alt="Having a meeting" width="1300" height="750">
                 </picture>
-                <div class="herobutton">
-                    <button>Join the Chamber</button>
+                <div class="hero-text">
+                    <p>Join the Chamber</p>
                 </div>
             </div> 
             <section class="card">
@@ -56,7 +57,11 @@
             </section>
             <section class="card">
                 <h2>Weather</h2>
-                <p>Cloudy</p>
+                <div id="weather">
+                    <p>Temperature: <span id="temperature">50</span>°F</p>
+                    <p>Wind Speed: <span id="windspeed">5</span> mph</p>
+                    <p>Wind Chill: <span id="windchill"></span>°F</p>
+                </div>
             </section>
 
             <h2>Member Spotlight</h2>
@@ -102,13 +107,13 @@
             </section>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.webp" alt="fb icon">
+                    <img srcset="images/facebook.webp" alt="fb icon" width="64" height="64">
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.webp" alt="twitter icon">
+                    <img srcset="images/twitter.webp" alt="twitter icon" width="64" height="64">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.webp" alt="instagram icon">
+                    <img srcset="images/instagram.webp" alt="instagram icon" width="64" height="64">
                 </a>
             </div>
             <p>&copy;<span id="year"></span> Inglewood Chamber | Aster Paredes Morales | WDD 230 Project

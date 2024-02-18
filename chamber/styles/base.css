@@ -31,26 +31,26 @@ header, footer {
 
 header {
     display: flex;
+    padding: 1rem;
+    position: relative;
 }
 
-.chamber-logo img {
-    width: 25%;
+.logo img {
+    width: 35%;
     height: auto;
-    object-fit: cover;
-    border-radius: 100%;
-    padding: 1rem;
+    border-radius: 50%;
 }
 
 h1 {
-    position: absolute;
     font-size: 20px;
-    padding: .5rem;
-    top: .10rem;
+    text-align: left;
+    padding-left: 10px;
+    position: absolute;
+    top: 1rem;
     left: 8rem;
 }
-
 h1::first-line {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 h1, h2, h3, footer {
@@ -64,15 +64,14 @@ nav {
 }
 
 #menu {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 2rem;
     text-decoration: none;
-    padding: .5rem;
+    padding: .3rem;
     border: 0;
     background: none;
     color: var(--accent1-color);
     position: absolute;
-    top: .5rem;
+    top: 1rem;
     right: 1rem;
 }
 
@@ -118,15 +117,15 @@ nav {
     position: absolute;
 	top: 1rem;
 	right: 3rem;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	cursor: pointer;
-    padding: 1rem;
+    padding: .5rem;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
 main {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -136,28 +135,33 @@ main {
     text-align: center;
 }
 
+.hero-card {
+    position: relative;
+}
+
 .hero-card img{
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-button {
-    position: relative;
-    top: -5rem;
-    right: -4rem;
-    background-color: var(--secondary-color);
+.hero-text {
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+    background:  white;
     color: var(--accent1-color);
-    border: 1px solid var(--accent2-color);
-    font-size: 18px;
-    padding: 15px 15px;
-    border-radius: 5px;
-    text-align: center;
+    font-size: 30px;
+    padding: .5rem;
+    opacity: 0.80;
 }
 
-button:hover {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
+.hero-text p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: var(--paragraph-font);
 }
 
 .card {
@@ -185,15 +189,15 @@ footer div {
 }
 
 footer .social img {
-    width: 40px;
+    width: 10%;
     height: auto;
-    border-radius: 50px;
+    border-radius: 100%;
 }
 
 footer img {
-    width: 20%;
+    width: 50%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 50%;
     justify-self: center;
     align-self: center;
     padding: .2rem;

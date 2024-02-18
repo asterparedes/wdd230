@@ -1,14 +1,13 @@
 @media screen and (min-width: 1300px) {
     header h1 {
         font-size: 30px;
-        top: 1rem;
+        top: -1rem;
         left: 10rem;
     }
-
     h1::first-line {
         font-size: 50px;
     }
-    
+
     #menu {
         display: none;
     }
@@ -22,8 +21,23 @@
         flex: 1 1 100%;
     }
 
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 15rem;
+    }
+
     main {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero-text {
+        top: 20rem;
+        left: 20rem;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
     }
 
     main .hero-card {
@@ -51,5 +65,13 @@
     }
     main .card:nth-child(7) {
         grid-column: 3 / 4;
+    }
+
+    footer .social img {
+        width: 5%;
+    }
+    
+    footer img {
+        width: 30%;
     }
 }
