@@ -32,21 +32,20 @@ header, h3, footer {
 
 header {
     display: flex;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 
 .profile-picture img {
-    width: 100px;
+    width: 80%;
     height: auto;
     object-fit: cover;
-    padding: .5rem;
 }
 
 h1 {
-    font-size: 30px;
-    padding: 1rem;
+    font-size: 25px;
+    padding-left: 10px;
 }
 
 nav {
@@ -110,7 +109,7 @@ main {
     grid-template-columns: 1fr;
     grid-gap: 1rem; 
     max-width: 960px; 
-    margin: auto;
+    margin: 0 auto;
 }
 
 .hero {
@@ -125,10 +124,11 @@ main {
 
 .herotext {
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	top: 10px;
+	left: 10px;
 	background: radial-gradient(#fff, #7080c7);
 	border: 1px solid var(--secondary-color);
+    font-size: 20px;
 	padding: 1rem;
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.80;
@@ -138,7 +138,7 @@ main {
 	margin: 0;
 	padding: .25rem;
 	font-weight: 700;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-family: var(--heading-font);
 }
 
@@ -171,7 +171,7 @@ h2 {
     padding: .3rem;
 }
 
-div {
+.card p {
     text-align: center;
 }
 
