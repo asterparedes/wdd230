@@ -211,3 +211,33 @@ footer p:nth-last-child(2) {
 #lastModified {
     grid-column: span 3;
 }
+
+.discover {
+    padding: 1rem;
+}
+
+.demographics-card, 
+.statistics-card,
+.calendar-card, 
+.attractions-card{
+    border: 1px solid var(--accent1-color);
+    margin: 1rem;
+}
+
+.attractions-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid var(--accent1-color);
+}
+
+.calendar-card p {
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}

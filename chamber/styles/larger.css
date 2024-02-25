@@ -4,6 +4,7 @@
         top: -1rem;
         left: 10rem;
     }
+
     h1::first-line {
         font-size: 50px;
     }
@@ -63,8 +64,30 @@
     main .card:nth-child(6) {
         grid-column: 2 / 3;
     }
+
     main .card:nth-child(7) {
         grid-column: 3 / 4;
+    }
+
+    .discover {
+        grid-template: 1fr 1fr 500px / 500px 1fr;
+    }
+    
+    .attractions-card {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+    
+    .attractions-card img {
+        width: 400px;
+    }
+
+    .attractions-card:hover img {
+        box-shadow: 0 0 50px var(--accent1-color);
+    }
+
+    .calendar-card p {
+        font-size: 1.5rem;
     }
 
     footer .social img {
