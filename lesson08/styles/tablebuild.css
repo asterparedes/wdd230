@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+    margin: 20px auto;
+    border: thin solid grey;
+    box-shadow: 0 0 10px gray;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: 1rem;
+}
+
+tr:first-child th, .blankspace {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: thin solid grey;
+}
+
+th {
+    padding: 15px 25px;
+    background-color: rgb(52, 51, 51);
+    color: white;
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(2) {
+    background-color: rgb(204, 200, 200);
+}
+
+tbody td:first-child {
+    font-size: larger;
+}
