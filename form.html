@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aster Paredes Morales - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 Web Frontend Development Aster Paredes Morales Course Home Page">
+    <meta name="description" content="Demonstrate understanding of the learning activities by applying the concepts to a form page.">
     <meta name="author" content="Aster Paredes Morales">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,13 +39,14 @@
         </ul>
     </nav>
     <main>
-        <form method="get" action="record.html" >
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
             <fieldset>
-                <legend>Sign Up Form</legend>
-                <label for="username">Username <input type="text" id="username" name="username" required></label>
-                <label for="password">Password <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
-                <label for="password2">Confirm Password <input type="password" id="password2" name="password2" required></label>
-                <label for="email">Email <input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <legend>Create Account</legend>
+                <label for="username">Username* <input type="text" id="username" name="username" required></label>
+                <label for="password">Password* <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></label>
+                <label for="password2">Confirm Password* <input type="password" id="password2" name="password2" required></label>
+                <label for="email">Email* <input type="email" id="email" name="email" placeholder="Please use your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
 
                 <label for="r">Page Rating</label>
                 <div id="rangevalue">1</div>
@@ -70,6 +72,6 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/pagevisits.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
