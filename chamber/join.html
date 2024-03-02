@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Chamber of Commerce Home Page</title>
-        <meta name="description" content="The Chamber of Commerce Home Page. This home page welcomes the visitor with key information and invitations to engage with the organization.">
+        <title>The Chamber of Commerce Join Page</title>
+        <meta name="description" content="The Chamber of Commerce Join Page. This join page is for a prospective member to apply to join the chamber of commerce through a membership application form.">
         <meta name="author" content="Aster Paredes Morales">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
@@ -31,67 +31,39 @@
         </header>
         <a id="menu" href="#"></a>
             <nav class="navigation">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
                 <a href="#">Directory</a>
-                <a href="join.html">Join</a>
+                <a href="join.html" class="active">Join</a>
             </nav>
         <div id="mode">
             🌑
         </div>
-        <main>
-            <div class="hero-card">
-                <picture>
-                    <source srcset="images/chamber-hero-small.webp" media="(max-width: 500px)">
-                    <source srcset="images/chamber-hero-medium.webp" media="(max-width: 800px)">
-                    <img src="images/chamber-hero-large.webp" alt="Having a meeting" width="1300" height="750">
-                </picture>
-                <div class="hero-text">
-                    <p>Join the Chamber</p>
-                </div>
-            </div> 
-            <section class="card">
-                <h2>Latest Events</h2>
-                <h3>Business Networking</h3>
-                <p>Come and join us</p>
-            </section>
-            <section class="card">
-                <h2>Weather</h2>
-                <div id="weather">
-                    <p>Temperature: <span id="temperature">50</span>°F</p>
-                    <p>Wind Speed: <span id="windspeed">5</span> mph</p>
-                    <p>Wind Chill: <span id="windchill"></span>°F</p>
-                </div>
-            </section>
+        <main class="join">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <label for="fname">First Name <input type="text" name="fname" id="fname" required></label>
+                    <label for="lname">Last Name <input type="text" name="lname" id="lname" required></label>
+                    <label for="jobtitle">Title <input type="text" name="jobtitle" id="jobtitle" pattern="" required></label>
+                    <label for="email">Email Address <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label for="phone">Phone Number <input type="tel" name="phone" id="phone" required></label>
+                    <label for="business">Business/Organization Name <input type="text" name="business" id="business" required></label>                  
+                </fieldset>
 
-            <h2>Member Spotlight</h2>
-            <section class="card">
-                <h3>The Company</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
-                    cumque nemo repellendus, aperiam debitis suscipit nobis sequi. Sunt,
-                    commodi dicta id nesciunt aperiam consectetur! Placeat natus totam
-                    recusandae alias incidunt.
-                </p>
-            </section>
-            <section class="card">
-                <h3>Bayanihan Foundation</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-                    suscipit distinctio perferendis iste similique, quisquam amet, atque
-                    deleniti tenetur, officia earum magni reprehenderit quis delectus enim
-                    aliquid vitae sit quod.
-                </p>
-            </section>
-            <section class="card">
-                <h3>SMILE Organization</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-                    nostrum aut provident numquam esse excepturi accusamus totam illum
-                    sit? Omnis illum quaerat ea laboriosam iste inventore in voluptatibus.
-                    Ad, cupiditate.
-                </p>
-            </section>
+                <fieldset>
+                    <legend>Membership Package</legend>
+                    <label for="nonprofit"><input type="radio" name="membership-package" id="nonprofit" value="nonprofit">NP Membership</label>
+                    <label for="bronze"><input type="radio" name="membership-package" id="bronze" value="bronze">Bronze Membership</label>
+                    <label for="silver"><input type="radio" name="membership-package" id="silver" value="silver">Silver Membership</label>
+                    <label for="gold"><input type="radio" name="membership-package" id="gold" value="gold">Gold Membership</label>
+
+                    <label for="description">Business Description</label>
+                    <textarea name="description" id="description"></textarea>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <button type="submit">Send Application</button>
+            </form>
         </main>
         <footer>
             <section>
