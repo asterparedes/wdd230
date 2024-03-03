@@ -98,12 +98,12 @@
         grid-column: 2 / 4;
     }
 
-    caption {  
-        font-size: 2.5rem;
+    tr:first-child th{
+        font-size: 2rem;
     }
 
-    tr:first-child th{
-        font-size: 1.25rem;
+    tr:nth-child(2) th{
+        font-size: 1.5rem;
     }
     
     tbody td:first-child {

@@ -295,13 +295,13 @@ table {
     border-collapse: collapse;
 }
 
-caption{
+tr:first-child th{
     font-family: var(--heading-font);
     font-size: 1.5rem;
 }
 
 
-tr:first-child th{
+tr:nth-child(2) th{
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
