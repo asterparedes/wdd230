@@ -90,6 +90,26 @@
         font-size: 1.5rem;
     }
 
+    .join h2 {
+        font-size: 2.5rem;
+    }
+    
+    table {
+        grid-column: 2 / 4;
+    }
+
+    caption {  
+        font-size: 2.5rem;
+    }
+
+    tr:first-child th{
+        font-size: 1.25rem;
+    }
+    
+    tbody td:first-child {
+        font-size: 1.2rem;
+    }
+
     footer .social img {
         width: 5%;
     }

@@ -40,20 +40,21 @@
             🌑
         </div>
         <main class="join">
-            <h2>Membership Application</h2>
+            <h2>Join the Inglewood Chamber of Commerce</h2>
             <form method="get" action="thankyou.html">
                 <fieldset>
-                    <label for="fname">First Name <input type="text" name="fname" id="fname" required></label>
-                    <label for="lname">Last Name <input type="text" name="lname" id="lname" required></label>
-                    <label for="jobtitle">Title <input type="text" name="jobtitle" id="jobtitle" pattern="" required></label>
-                    <label for="email">Email Address <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
-                    <label for="phone">Phone Number <input type="tel" name="phone" id="phone" required></label>
-                    <label for="business">Business/Organization Name <input type="text" name="business" id="business" required></label>                  
+                    <legend>Membership Application</legend>
+                    <label for="fname">First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label for="lname">Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label for="jobtitle">Job Title/Position* <input type="text" name="jobtitle" id="jobtitle" pattern="^[a-zA-Z\- ]{7,}$" required></label>
+                    <label for="email">Email Address* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label for="phone">Phone Number* <input type="tel" name="phone" id="phone" required></label>
+                    <label for="business">Business/Organization Name* <input type="text" name="business" id="business" required></label>                  
                 </fieldset>
 
                 <fieldset>
                     <legend>Membership Package</legend>
-                    <label for="nonprofit"><input type="radio" name="membership-package" id="nonprofit" value="nonprofit">NP Membership</label>
+                    <label for="nonprofit"><input type="radio" name="membership-package" id="nonprofit" value="nonprofit">Non Profit Membership (No Fee)</label>
                     <label for="bronze"><input type="radio" name="membership-package" id="bronze" value="bronze">Bronze Membership</label>
                     <label for="silver"><input type="radio" name="membership-package" id="silver" value="silver">Silver Membership</label>
                     <label for="gold"><input type="radio" name="membership-package" id="gold" value="gold">Gold Membership</label>
@@ -62,8 +63,58 @@
                     <textarea name="description" id="description"></textarea>
                     <input type="hidden" name="timestamp" id="timestamp">
                 </fieldset>
-                <button type="submit">Send Application</button>
+                <button type="submit">SEND APPLICATION</button>
             </form>
+
+            <table>
+                <thead>
+                    <caption>MEMBER BENEFITS</caption>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">BRONZE  $300/yr</th>
+                        <th scope="col">SILVER $500/yr</th>
+                        <th scope="col">GOLD $1,000/yr</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Networking Opportunities: Connect with other local businesses</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr> 
+                    <tr>
+                        <td>Business Promotion: Gain visibility through chamber directories and website</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Discounted ticket for Chamber sponsored events</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Discounts on business services and office supplies</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>Social media shares</td>
+                        <td>X5</td>
+                        <td>X7</td>
+                        <td>X9</td>
+                    </tr> 
+                    <tr>
+                        <td>Ribbon Cutting Ceremony</td>
+                        <td>$100</td>
+                        <td>FREE</td>
+                        <td>FREE</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <footer>
             <section>
@@ -94,6 +145,6 @@
         </footer>
         <script src="scripts/main.js"></script>
         <script src="scripts/mode.js"></script>
-        <script src="scripts/windchill.js"></script>
+        <script src="scripts/timestamp.js"></script>
     </body>
 </html>

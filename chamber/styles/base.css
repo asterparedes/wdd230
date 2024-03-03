@@ -216,35 +216,39 @@ figcaption {
     padding: 0 2%;
 }
 
-fieldset {
-    margin: 2rem 0;
-    border: none;
-    border-bottom: 3px solid var(--accent1-color);
-    padding: .5rem 5%;
-    font-size: 1.75rem;
-    color: var(--primary-color);
+.join h2 {
+    padding-top: 1rem;
 }
 
-fieldset:last-of-type {
-    border-bottom: none;
+fieldset {
+    margin: 2rem 0;
+    border: 3px solid var(--accent2-color);
+    padding: .5rem 5%;
+    font-size: 1.5rem;
 }
 
 legend {
-    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
     padding: 0 .5rem;
+    border-radius: 6px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-align: left;
 }
 
 label {
     display: block;
     padding-top: 1rem;
     color: var(--accent1-color);
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: left;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+textarea {
     background-color: #fff;
     display: block;
     border: 1px solid var(--accent1-color);
@@ -252,8 +256,76 @@ input[type="tel"] {
     padding: .75rem;
     color: var(--accent1-color);
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     appearance: none;
+}
+
+textarea {
+    font-size: 1rem;
+    height: 100px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 6px;
+    padding: .9rem;
+    width: 96%;
+    max-width: 500px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px var(--primary-color);
+    cursor: pointer;
+    opacity: 1;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    opacity: .9;
+}
+
+table {
+    margin: 20px auto;
+    border: thin solid var(--secondary-color);
+    border-collapse: collapse;
+}
+
+caption{
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+
+tr:first-child th{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: 1rem;
+    font-family: var(--heading-font);
+}
+
+th, td {
+    padding: .5rem;
+    border: none;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+tbody tr:nth-child(even):hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+tbody td:first-child {
+    font-size: .9rem;
 }
 
 footer {
