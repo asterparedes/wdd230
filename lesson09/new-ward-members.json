@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+    "familyName": "Villanueva",
+    "dateMoved": "2022-04-25",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Magdalena Villanueva",
+            "gender": "Female",
+            "birthDate": "1949-05-25"
+        },
+        {
+            "name": "Aida Villanueva",
+            "gender": "Female",
+            "birthDate": "1965-02-04"
+        },
+        {
+            "name": "Jane Villanueva",
+            "gender": "Female",
+            "birthDate": "1976-09-25"
+        },
+        {
+            "name": "Joseph Hamil Villanueva",
+            "gender": "Male",
+            "birthDate": "1970-12-12"
+        },
+        {
+            "name": "Chris John Villanueva",
+            "gender": "Male",
+            "birthDate": "1988-11-15"
+        }
+    ]
+    }
+}
