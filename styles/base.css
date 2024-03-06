@@ -23,7 +23,6 @@ header, footer {
     max-width: 1000px;
     margin: auto;
     color: var(--secondary-color);
-
 }
 
 header, h3, footer {
