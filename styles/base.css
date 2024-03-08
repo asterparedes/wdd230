@@ -163,8 +163,9 @@ h2 {
     border-radius: 8px 8px 0 0;
 }
 
-.card ul li {
+#lessonLinks p {
     list-style: none;
+    text-align: left;
     font-family: var(--paragraph-font);
     margin-left: 1rem;
     padding: .3rem;

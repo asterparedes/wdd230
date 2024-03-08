@@ -1,6 +1,15 @@
 const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 const cards = document.querySelector('#cards');
 
+
+const getProphetData = async () => {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayProphets(data.prophets);
+}
+
+getProphetData();
+
 const displayProphets = (prophets) => {
     prophets.forEach(prophet => {
         // Create elements
@@ -18,8 +27,8 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '250');
-        portrait.setAttribute('height', '300');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
 
         card.appendChild(fullName);
         card.appendChild(birthDate);
@@ -29,11 +38,3 @@ const displayProphets = (prophets) => {
         cards.appendChild(card);
     });
 };
-
-const getProphetData = async () => {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayProphets(data.prophets);
-}
-
-getProphetData();
