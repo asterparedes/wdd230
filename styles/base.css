@@ -165,7 +165,6 @@ h2 {
 }
 
 #lessonLinks p {
-    list-style: none;
     text-align: left;
     font-family: var(--paragraph-font);
     margin-left: 1rem;

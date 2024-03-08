@@ -5,16 +5,12 @@ const lessonLinks = document.querySelector('#lessonLinks');
 const getLinks = async () => {
     const response = await fetch(linksURL);
     const data = await response.json();
-    // console.log(data);
     displayLinks(data.lessons);
 }
-
 getLinks();
 
 const displayLinks = (weeks) => {
     weeks.forEach(week => {
-        // Create elements
-        //let weekLessonTemp = document.createElement('section');
         let weekLesson = document.createElement('p');
         weekLesson.textContent = `Week ${week.lesson}: `;
 
@@ -27,15 +23,13 @@ const displayLinks = (weeks) => {
             if (index > 0) {
                 let separator = document.createElement('span');
 
-                separator.textContent = " | ";
+                separator.textContent = ' | ';
                 separator.appendChild(lessonURL);
                 weekLesson.appendChild(separator);
             }else{
                 weekLesson.appendChild(lessonURL);
             }
         });
-
-        
         lessonLinks.appendChild(weekLesson);
     });
 };
