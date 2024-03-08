@@ -154,6 +154,7 @@ h2 {
 .card {
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
+    margin: .5rem;
 }
 
 .card h3 {
