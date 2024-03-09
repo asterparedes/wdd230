@@ -8,8 +8,6 @@ const getProphetData = async () => {
     displayProphets(data.prophets);
 }
 
-getProphetData();
-
 const displayProphets = (prophets) => {
     prophets.forEach(prophet => {
         // Create elements
@@ -38,3 +36,5 @@ const displayProphets = (prophets) => {
         cards.appendChild(card);
     });
 };
+
+getProphetData();

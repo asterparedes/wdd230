@@ -7,7 +7,6 @@ const getLinks = async () => {
     const data = await response.json();
     displayLinks(data.lessons);
 }
-getLinks();
 
 const displayLinks = (weeks) => {
     weeks.forEach(week => {
@@ -33,3 +32,5 @@ const displayLinks = (weeks) => {
         lessonLinks.appendChild(weekLesson);
     });
 };
+
+getLinks();
