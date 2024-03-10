@@ -211,6 +211,7 @@ figcaption {
 /*----------- DIRECTORY PAGE --------------*/
 
 .directory-heading {
+    font-size: 2rem;
     padding-top: .5rem;
 }
 .menu {
