@@ -105,7 +105,7 @@ nav {
 
 .navigation a.active,
 .navigation a:hover{
-    color: var(--primary-color);
+    color: var(--accent1-color);
     font-weight: 500;
     text-decoration: underline;
 }
@@ -206,6 +206,110 @@ figcaption {
     text-align: center;
     font-size: 1.5rem;
     padding-bottom: .5rem;
+}
+
+/*----------- DIRECTORY PAGE --------------*/
+
+.directory-heading {
+    padding-top: .5rem;
+}
+.menu {
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.menu button {
+    border: 1px thin var(--accent2-color);
+    padding: .5rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.menu button:hover{
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.directory-info section {
+    border-collapse: collapse;
+    box-shadow: 0 0 15px var(--accent1-color);
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.directory-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.directory-info section {
+    text-align: center;
+}
+
+.directory-info img {
+    border: none;
+}
+
+.directory-info section h3 {
+    display: none;
+}
+
+.list {
+    display: block;
+    padding: .25rem;
+}
+
+.list section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0;
+    border: none;
+    padding: .5rem;
+    text-align: left;
+    box-shadow: none;
+}
+
+.list section img{
+    display: none;
+}
+
+.list section h3 {
+    display: block;
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-family: var(--heading-font);
+}
+
+.list section:nth-child(odd) {
+    background-color: var(--accent2-color);
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-size: 1rem;
+}
+
+section a {
+    font-family: var(--nav-font);
+    font-size: .75rem;
+    letter-spacing: 1.1pt;
+}
+
+section img {
+    height: 100px;
+    max-width: 100%;
+}
+
+.directory-info section:last-child img {
+    height:  100px;
+    width: 100px;
 }
 
 /*----------- JOIN PAGE --------------*/
