@@ -5,39 +5,43 @@
             "address": "555 E Hardy St, Inglewood, CA 90301",
             "phoneNumber": "(310) 673-4660",
             "website": "https://centinelamed.com",
-            "image": "https://centinelamed.com/wp-content/uploads/2022/12/CentinelaHospitalMedicalCenter.png",
-            "membershipLevel": "Gold"
+            "image": "images/CentinelaHospitalMedicalCenter.png",
+            "membershipLevel": "Gold",
+            "membershipStarted" : "2019"
         },
         {
             "name": "Courtyard By Marriott",
             "address": "4427 W El Segundo Blvd, Hawthorne, CA 90250",
             "phoneNumber": "(310) 263-1116",
             "website": "https://www.marriott.com",
-            "image": "https://cache.marriott.com/content/dam/marriott-digital/cy/global-property-shared/en_us/logo/assets/cy_logo_L.png",
-            "membershipLevel": "Gold"
+            "image": "images/cy_logo_L.png",
+            "membershipLevel": "Gold",
+            "membershipStarted" : "2022"
         },
         {
             "name": "Inglewood Park Cemetery",
             "address": "720 E Florence Ave, Inglewood, CA 90301",
             "phoneNumber": "(310) 412-6500",
             "website": "https://www.inglewoodparkcemetery.com",
-            "image": "https://www.inglewoodparkcemetery.com/2022/wp-content/uploads/2022/01/logo.svg",
-            "membershipLevel": "Silver"
+            "image": "images/inglewood-cemetery-park-logo.png",
+            "membershipLevel": "Silver",
+            "membershipStarted" : "2018"
         },
         {
             "name": "Glow & Flow Beauty Supply",
             "address": "933 N La Brea Ave, Inglewood, CA 90304",
             "phoneNumber": "(310) 419-9299",
             "website": "https://glowandflowbeauty.com/",
-            "image": "https://glowandflowbeauty.com/cdn/shop/files/G_F_logo.png?v=1630419086&width=400",
-            "membershipLevel": "Bronze"
+            "image": "images/G_F_logo.png",
+            "membershipLevel": "Bronze",
+            "membershipStarted" : "2021"
         },
         {
             "name": "Clark Construction",
             "address": "515 S Figueroa St, Ste 2000, Los Angeles, CA 90071",
             "phoneNumber": "(213) 933-2103",
             "website": "https://www.clarkconstruction.com",
-            "image": "https://www.clarkconstruction.com/themes/custom/clark/logo.svg",
+            "image": "images/logo.png",
             "membershipLevel": "Silver"
         },
         {
@@ -45,16 +49,18 @@
             "address": "400 E Florence Ave, Inglewood, CA 90301",
             "phoneNumber": "(310) 671-6200",
             "website": "https://orleansandyorkdeli.com",
-            "image": "https://orleansandyorkdeli.com/wp-content/uploads/2018/10/OrleansYork.Logo_.Black_.Gold_.svg",
-            "membershipLevel": "Bronze"
+            "image": "images/OrleansYork.Logo_.Black_.Gold_.png",
+            "membershipLevel": "Bronze",
+            "membershipStarted" : "2023"
         },
         {
             "name": "Steele Logistics",
             "address": "101 W Walnut St, Ste 129, Gardena, CA 90248",
             "phoneNumber": "(310) 464-1540",
             "website": "https://www.steelelogistics.com",
-            "image": "https://images.squarespace-cdn.com/content/v1/5f67d3dfac5e825e37c43365/1600899040284-VPRQNWIE5HID35J4BBXT/gradient+logo-01.png?format=1500w",
-            "membershipLevel": "Gold"
+            "image": "images/gradient+logo.png",
+            "membershipLevel": "Gold",
+            "membershipStarted" : "2024"
         }
     ]
 }

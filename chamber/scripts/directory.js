@@ -1,7 +1,7 @@
 const grid = document.querySelector('#grid');
 const list = document.querySelector('#list');
 const directory = document.querySelector('.directory-info');
-const url = "data/members.json";
+const url = "https://asterparedes.github.io/wdd230/chamber/data/members.json";
 
 grid.addEventListener('click', () => {
     directory.classList.add('grid');
@@ -29,24 +29,27 @@ const displayMembers = (members) => {
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let websiteUrl = document.createElement('a');
+        let membership = document.createElement('p');
 
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '400');
-        logo.setAttribute('height', '250');
+        logo.setAttribute('width', '250');
+        logo.setAttribute('height', '100');
 
         companyName.textContent = member.name;
         address.textContent = member.address;
         phone.textContent = member.phoneNumber;
         websiteUrl.textContent = member.website;
         websiteUrl.href = member.website;
+        membership.textContent = `Membership Level: ${member.membershipLevel}`;
 
         card.appendChild(logo);
         card.appendChild(companyName);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(websiteUrl);
+        card.appendChild(membership);
         directory.appendChild(card);
     });
 }

@@ -1,4 +1,4 @@
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
     header h1 {
         font-size: 30px;
         top: -1rem;
@@ -116,10 +116,6 @@
         padding: 1rem;
     }
 
-    .directory-heading {
-        font-size: 3rem;
-    }
-
     .menu button {
         grid-column: 3 / 4;
     }
@@ -131,15 +127,23 @@
 
     .list section {
         display: grid;
-        grid-template-columns: 1fr 200px 200px 1fr;
+        grid-template-columns: 1fr 225px auto 1fr 1fr;
     }
 
     .list section h3 {
-        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        align-self: center;
+    }
+
+    .list section p {
+        align-self: center;
+        margin: 1rem;
+        padding: 1rem;
     }
 
     .list section a {
         grid-column: span 1;
+        align-self: center;
     }
 
     footer .social img {
