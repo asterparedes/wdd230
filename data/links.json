@@ -31,11 +31,11 @@
             "links": [
                 {
                     "url": "images/combinator-exercise.png",
-                    "title": "CSS Combinators"
+                    "title": "Combinators"
                 },
                 {
                     "url": "https://codepen.io/asterparedes/pen/gOEGXwy",
-                    "title": "CSS Psuedo-Elements"
+                    "title": "Psuedo-Elements"
                 },
                 {
                     "url": "https://codepen.io/asterparedes/pen/NWJawzN",
@@ -48,7 +48,7 @@
             "links": [
                 {
                     "url": "https://codepen.io/asterparedes/pen/eYXMxgV",
-                    "title": "CSS Psuedo-Classes"
+                    "title": "Psuedo-Classes"
                 }
             ]
         },
