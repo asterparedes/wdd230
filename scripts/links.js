@@ -25,7 +25,7 @@ const displayLinks = (weeks) => {
                 separator.textContent = ' | ';
                 separator.appendChild(lessonURL);
                 weekLesson.appendChild(separator);
-            }else{
+            }  else{
                 weekLesson.appendChild(lessonURL);
             }
         });
