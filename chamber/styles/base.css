@@ -129,7 +129,7 @@ main {
     max-width: 1400px;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-gap: 1rem;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
@@ -171,6 +171,52 @@ main {
     margin: 1rem;
 }
 
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    margin: .5rem;
+    border: 1px solid var(--accent2-color);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.current-weather {
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: .5rem;
+}
+
+.forecast {
+    flex-direction: row;
+}
+
+#weather-icon {
+    width: 65px;
+    height: auto;
+    object-fit: cover;
+}
+
+#current-temp,
+#current-desc {
+    font-size: 1.5rem;
+}
+
+#day1,
+#day2,
+#day3 {
+    font-size: .95rem;
+}
+
+#forecast1,
+#forecast2,
+#forecast3 {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.75rem;
+}
 
 #lastModified {
     grid-column: span 3;

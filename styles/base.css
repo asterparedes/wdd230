@@ -175,14 +175,35 @@ h2 {
     text-align: center;
 }
 
-#info {
+.weather-info {
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-gap: .5rem;
+    padding: .5rem;
+}
+
+.weather-info figure {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#description {
-    text-transform: capitalize;
+.weather-info figcaption {
+    font-size: 1.5rem;
+}
+
+.weather-info p {
+    font-size: 1.75rem;
+}
+
+#weather-icon {
+    width: 6rem;
+    object-fit: contain;
+}
+
+#current-temp {
+    font-size: 2rem;
 }
 
 #lastModified {

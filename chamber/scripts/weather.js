@@ -3,7 +3,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherDesc = document.querySelector('figcaption');
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.96&lon=-118.35&appid=c78747c4a9b3866f0e10641426bb61e2&units=imperial';
 
-const apiFetch = async () => {
+const fetchAPI = async () => {
     try {
         const response = await fetch(url);
         if (response.ok) {
@@ -32,4 +32,4 @@ const capitalize = (s) => {
     return `${s.charAt(0).toUpperCase()}${s.slice(1)}`;
 }
 
-apiFetch();
+fetchAPI();

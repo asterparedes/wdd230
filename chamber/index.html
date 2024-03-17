@@ -54,13 +54,35 @@
                 <h2>Latest Events</h2>
                 <h3>Business Networking</h3>
                 <p>Come and join us</p>
+                <div class="banner"></div>
             </section>
             <section class="card">
                 <h2>Weather</h2>
-                <div id="weather">
+                <!-- <div id="weather">
                     <p>Temperature: <span id="temperature">50</span>°F</p>
                     <p>Wind Speed: <span id="windspeed">5</span> mph</p>
                     <p>Wind Chill: <span id="windchill"></span>°F</p>
+                </div> -->
+                <div class="weather-info">
+                    <div class="current-weather">
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <span id="current-temp"></span>
+                            <figcaption></figcaption>
+                        </figure>
+                        <p id="windspeed"></p>
+                        <p id="windchill"></p>
+                    </div>
+                    <div class="forecast">
+                        <p><span id="day1"></span></p>
+                        <p><span id="forecast1"> </span> &deg;F</p>
+
+                        <p><span id="day2"></span></p>
+                        <p><span id="forecast2"> </span> &deg;F</p>
+
+                        <p><span id="day3"></span></p> 
+                        <p><span id="forecast3"> </span> &deg;F</p> 
+                    </div> 
                 </div>
             </section>
 
@@ -122,6 +144,8 @@
         </footer>
         <script src="scripts/main.js"></script>
         <script src="scripts/mode.js"></script>
-        <script src="scripts/windchill.js"></script>
+        <!-- <script src="scripts/windchill.js"></script> -->
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/forecast.js"></script>
     </body>
 </html>
