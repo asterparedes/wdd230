@@ -19,8 +19,8 @@ const displayForecast = (data) => {
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     threedayforecast.forEach(forecast => {
         const d = new Date(forecast.dt_txt);
-        document.getElementById(`day${day+1}`).innerHTML = weekdays[d.getDay()];
-        document.getElementById(`forecast${day+1}`).innerHTML = forecast.main.temp_max.toFixed(0);
+        document.querySelector(`#day${day+1}`).innerHTML = weekdays[d.getDay()];
+        document.querySelector(`#forecast${day+1}`).innerHTML = forecast.main.temp_max.toFixed(0);
         day++;
     });
 }

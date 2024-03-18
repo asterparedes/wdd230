@@ -52,9 +52,10 @@
             </div> 
             <section class="card">
                 <h2>Latest Events</h2>
-                <h3>Business Networking</h3>
-                <p>Come and join us</p>
-                <div class="banner"></div>
+                <div class="event-banner">
+                    <h3>Meet and Greet Event</h3>
+                    <p>Come and join us on Wednesday at 7:00pm</p>
+                </div>
             </section>
             <section class="card">
                 <h2>Weather</h2>
@@ -64,23 +65,24 @@
                     <p>Wind Chill: <span id="windchill"></span>°F</p>
                 </div> -->
                 <div class="weather-info">
+                    <h3>Inglewood Current Weather</h3>
                     <div class="current-weather">
-                        <figure>
-                            <img id="weather-icon" src="" alt="">
-                            <span id="current-temp"></span>
-                            <figcaption></figcaption>
-                        </figure>
+                        <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                        <p><span id="current-temp"></span> - <span id="description"></span></p>
                         <p id="windspeed"></p>
                         <p id="windchill"></p>
                     </div>
+                    <h3>3-Day Forecast</h3>
                     <div class="forecast">
-                        <p><span id="day1"></span></p>
+                        <p id="day1"></p>
                         <p><span id="forecast1"> </span> &deg;F</p>
-
-                        <p><span id="day2"></span></p>
+                    </div> 
+                    <div class="forecast">
+                        <p id="day2"></p>
                         <p><span id="forecast2"> </span> &deg;F</p>
-
-                        <p><span id="day3"></span></p> 
+                    </div> 
+                    <div class="forecast">
+                        <p id="day3">></p> 
                         <p><span id="forecast3"> </span> &deg;F</p> 
                     </div> 
                 </div>
@@ -147,5 +149,6 @@
         <!-- <script src="scripts/windchill.js"></script> -->
         <script src="scripts/weather.js"></script>
         <script src="scripts/forecast.js"></script>
+        <script src="scripts/banner.js"></script>
     </body>
 </html>
