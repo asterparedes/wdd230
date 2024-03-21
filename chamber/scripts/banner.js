@@ -1,13 +1,33 @@
-const eventBanner = document.querySelector('.event-banner');
+// let eventBanner = getElementByClassName('open-banner');
+// let i;
 
-eventBanner.addEventListener('click', () => {
+// for (i = 0; i < eventBanner.length; i++) {
+//     eventBanner[i].addEventListener('click', function() {
+//         this.classList.toggle('active');
+//         let banner = this.nextElementSibling;
+//         if (banner.style.maxHeight) {
+//             banner.style.maxHeight = null;
+//         } else {
+//             banner.style.maxHeight = banner.scrollHeight + 'px';
+//         }
+//     });
+// }
+
+document.addEventListener('DOMContentLoaded', () => {
     const day = new Date();
     const dayOfWeek = day.getDay();
 
     if (dayOfWeek >= 1 && dayOfWeek <=3) {
-        eventBanner.classList.toggle('open');
+        showBanner();
     } else {
-        eventBanner.textContent = 'X';
-        eventBanner.classList.toggle('close');
+        closeBanner();
     }
-})
+});
+
+function showBanner() {
+    document.querySelector('.event-banner').style.display = 'block';
+}
+
+function closeBanner() {
+    document.querySelector('.event-banner').style.display = 'none';
+}
