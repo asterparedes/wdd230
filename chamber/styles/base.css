@@ -21,7 +21,7 @@ body {
     line-height: 1.5;
 }
 
-header, footer {
+header, main, footer {
     max-width: 1500px;
     margin: auto;
 }
@@ -31,25 +31,25 @@ header, footer {
     color: var(--secondary-color);
 }
 
-header {
+.logo {
     display: flex;
-    padding: 1rem;
     position: relative;
+    padding: 1rem;
 }
 
 .logo img {
-    width: 35%;
+    width: 25%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
-h1 {
+.logo h1 {
     font-size: 20px;
     text-align: left;
-    padding-left: 10px;
+    padding: .5rem;
     position: absolute;
-    top: 1rem;
-    left: 8rem;
+    top: -1rem;
+    left: 6rem;
 }
 
 h1::first-line {
@@ -66,10 +66,7 @@ nav {
     font-family: var(--nav-font);
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: .2rem;
+footer {    
     padding: 1rem;
     font-size: 20px;
     text-align: center;
@@ -79,27 +76,19 @@ footer a {
     text-decoration: none;
 }
 
-footer div {
-    grid-column: span 3;
-    padding: .2rem;
+.contact-info {
+    padding: .5rem;
 }
 
-footer .social img {
+.social img {
     width: 10%;
     height: auto;
     border-radius: 100%;
-}
-
-footer img {
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-    justify-self: center;
-    align-self: center;
-    padding: .2rem;
+    margin: .3rem;
 }
 
 footer p:nth-last-child(2) {
+    margin-top: .5rem;
     grid-column: span 3;
 }
 
@@ -115,7 +104,7 @@ footer p:nth-last-child(2) {
     background: none;
     color: var(--accent1-color);
     position: absolute;
-    top: 1rem;
+    top: 0;
     right: 1rem;
 }
 
@@ -131,9 +120,10 @@ footer p:nth-last-child(2) {
 .navigation {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    font-size: 1.25rem;
     background-color: var(--accent2-color);
     color: var(--accent1-color);
 }
@@ -159,7 +149,7 @@ footer p:nth-last-child(2) {
 
 #mode {
     position: absolute;
-	top: 1rem;
+	top: 0;
 	right: 3rem;
 	font-size: 1.75rem;
 	cursor: pointer;
@@ -169,7 +159,6 @@ footer p:nth-last-child(2) {
 }
 
 main {
-    max-width: 1400px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -189,18 +178,8 @@ main {
     object-fit: cover;
 }
 
-.hero-text {
-    position: absolute;
-    top: 5rem;
-    left: 10rem;
-    background:  white;
-    color: var(--accent1-color);
-    font-size: 30px;
-    padding: .5rem;
-    opacity: 0.80;
-}
 
-.hero-text p {
+.hero-button a {
     margin: 0;
     padding: .25rem;
     font-weight: 500;
@@ -209,9 +188,10 @@ main {
 }
 
 .card {
-    border: 1px solid var(--accent1-color);
-    border-radius: 8px;
     margin: 1rem;
+    box-shadow: 0 0 15px var(--accent1-color);
+    border: none;
+    border-radius: 1rem;
 }
 
 .event-banner {
@@ -235,32 +215,6 @@ main {
 .open-banner {
     margin-top: 5px;
 }
-
-
-/* .active,
-.open-banner:hover {
-    background-color: var(--accent2-color);
-}
-
-.open-banner:after {
-    content: '\002B';
-    color: var(--secondary-color);
-    font-size: .75rem;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: '\2212';
-}
-
-.event-banner {
-    padding: 0 18px;
-    background-color: var(--accent2-color);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-} */
 
 .weather-info {
     display: grid;
@@ -334,21 +288,26 @@ main {
 }
 
 .demographics-card, 
-.statistics-card,
-.calendar-card, 
-.attractions-card{
-    border: 1px solid var(--accent1-color);
+.attractions-card {
     margin: 1rem;
+    box-shadow: 0 0 15px var(--accent1-color);
+    border: none;
+    border-radius: 1rem;
+}
+
+.demographics-card, 
+.visit-card, 
+.attractions-card h2 {
+    padding: .5rem;
 }
 
 .attractions-card img{
     width: 100%;
     height: auto;
-    object-fit: cover;
-    border: 1px solid var(--accent1-color);
+    border-radius: 1rem;
 }
 
-.calendar-card p {
+.visit-card {
     font-size: 1.25rem;
     padding: 1rem;
 }
@@ -368,6 +327,7 @@ figcaption {
 
 .menu button {
     border: 1px thin var(--accent2-color);
+    border-radius: .5rem;
     padding: .5rem;
     font-weight: 700;
     background-color: var(--primary-color);
@@ -381,8 +341,9 @@ figcaption {
 
 .directory-info section {
     box-shadow: 0 0 15px var(--accent1-color);
-    padding: .5rem;
     margin: .5rem;
+    border-radius: 1rem;
+    padding: .5rem;
     text-align: center;
 }
 

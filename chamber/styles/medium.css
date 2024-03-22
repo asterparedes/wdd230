@@ -1,11 +1,15 @@
 @media screen and (min-width: 800px) {
-    header h1 {
+    .logo img{
+        width: 35%;
+    }
+    
+    .logo h1 {
         font-size: 30px;
-        top: -1rem;
+        top: -2rem;
         left: 10rem;
     }
 
-    h1::first-line {
+    .logo h1::first-line {
         font-size: 50px;
     }
 
@@ -30,15 +34,6 @@
 
     main {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .hero-text {
-        top: 20rem;
-        left: 20rem;
-    }
-
-    .hero-text p {
-        font-size: 2rem;
     }
 
     main .hero-card {
@@ -82,11 +77,11 @@
         width: 400px;
     }
 
-    .attractions-card:hover img {
-        box-shadow: 0 0 50px var(--accent1-color);
+    .attractions-card figcaption {
+        font-size: 1.85rem;
     }
-
-    .calendar-card p {
+    
+    .visit-card p {
         font-size: 1.5rem;
     }
 
