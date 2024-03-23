@@ -72,13 +72,9 @@
         grid-column: 2 / 3;
         grid-row: 1 / 4;
     }
-    
-    .attractions-card img {
-        width: 400px;
-    }
 
     .attractions-card figcaption {
-        font-size: 1.85rem;
+        font-size: 1.75rem;
     }
     
     .visit-card p {
@@ -107,16 +103,15 @@
 
     .directory {
         display: grid;
-        grid-template: 1fr 1fr / 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .directory-card {
+        grid-column: 1 / 3;
         padding: 1rem;
     }
 
-    .menu button {
-        grid-column: 3 / 4;
-    }
-
     .directory-info {
-        grid-column: 1 / 3;
         margin: 1rem;
     }
 

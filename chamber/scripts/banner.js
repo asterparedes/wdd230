@@ -1,33 +1,27 @@
-// let eventBanner = getElementByClassName('open-banner');
-// let i;
+// document.addEventListener('DOMContentLoaded', () => {
+//     const day = new Date();
+//     const dayOfWeek = day.getDay();
 
-// for (i = 0; i < eventBanner.length; i++) {
-//     eventBanner[i].addEventListener('click', function() {
-//         this.classList.toggle('active');
-//         let banner = this.nextElementSibling;
-//         if (banner.style.maxHeight) {
-//             banner.style.maxHeight = null;
-//         } else {
-//             banner.style.maxHeight = banner.scrollHeight + 'px';
-//         }
-//     });
+//     if (dayOfWeek >= 1 && dayOfWeek <=3) {
+//         showBanner();
+//     } else {
+//         closeBanner();
+//     }
+// });
+
+// function showBanner() {
+//     document.querySelector('.event-banner').style.display = 'block';
 // }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const day = new Date();
-    const dayOfWeek = day.getDay();
+// function closeBanner() {
+//     document.querySelector('.event-banner').style.display = 'none';
+// }
 
-    if (dayOfWeek >= 1 && dayOfWeek <=3) {
-        showBanner();
+function eventBanner() {
+    let event = document.querySelector('.event-banner');
+    if (event.style.display === 'none') {
+        event.style.display = 'block';
     } else {
-        closeBanner();
+        event.style.display = 'none';
     }
-});
-
-function showBanner() {
-    document.querySelector('.event-banner').style.display = 'block';
-}
-
-function closeBanner() {
-    document.querySelector('.event-banner').style.display = 'none';
 }

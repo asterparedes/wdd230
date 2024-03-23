@@ -76,15 +76,12 @@
     }
 
     .discover {
-        grid-template-columns: 500px 1fr;
+        grid-template: 1fr 1fr 500px / 500px 1fr;
     }
     
     .attractions-card {
         grid-column: 2 / 3;
-    }
-    
-    .attractions-card img {
-        width: 600px;
+        grid-row: 1 / 4;
     }
 
     .attractions-card figcaption {
@@ -117,16 +114,14 @@
 
     .directory {
         display: grid;
-        grid-template: 1fr 1fr / 1fr;
-        padding: 1rem;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .menu button {
-        grid-column: 3 / 4;
+    .directory-card {
+        grid-column: 1 / 3;
     }
 
     .directory-info {
-        grid-column: 1 / 3;
         margin: 1rem;
     }
 
