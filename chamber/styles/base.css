@@ -60,6 +60,26 @@ h1, h2, h3, footer {
     font-family: var(--heading-font);
 }
 
+.hero-card a {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    top: 1rem;
+    left: .5rem;
+    margin: .5rem;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.hero-card a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 nav {
     max-width: 1500px;
     margin: auto;
@@ -85,6 +105,7 @@ footer a {
     height: auto;
     border-radius: 70%;
     margin: .3rem;
+    object-fit: cover;
 }
 
 footer p:nth-last-child(2) {
@@ -178,23 +199,11 @@ main {
     object-fit: cover;
 }
 
-.hero-button a {
-    margin: 0;
-    padding: .25rem;
-    font-weight: 500;
-    font-size: 1rem;
-    font-family: var(--paragraph-font);
-}
-
 .card {
     margin: 1rem;
     box-shadow: 0 0 15px var(--accent1-color);
     border: none;
     border-radius: 1rem;
-}
-
-.card:nth-child(5) {
-    box-shadow: none;
 }
 
 .event-banner {
@@ -213,6 +222,20 @@ main {
     padding: .5rem;
 }
 
+.event-info {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: .75rem;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.event-info p:nth-child(5) {
+    padding-top: .5rem;
+}
+
 .weather-info {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -222,9 +245,9 @@ main {
     align-items: center;
     background-color: var(--accent2-color);
     color: var(--accent1-color);
-    margin: .5rem;
+    margin: 1rem;
     border: none;
-    border-radius: .5rem;
+    border-radius: 1rem;
 }
 
 .weather-info h3{
@@ -272,10 +295,6 @@ main {
 #forecast3 {
     text-align: center;
     font-size: 1.5rem;
-}
-
-#lastModified {
-    grid-column: span 3;
 }
 
 /* || DISCOVER PAGE */
@@ -328,9 +347,9 @@ figcaption {
 
 /* || DIRECTORY PAGE */
 
-.directory-card {
-    margin: 1rem;
-    padding: 1rem;
+.directory-card h2,
+.join h2 {
+    padding-top: 1rem;
 }
 
 .menu {
@@ -350,15 +369,6 @@ figcaption {
 .menu button:hover{
     background-color: var(--accent2-color);
     color: var(--accent1-color);
-}
-
-.directory {
-    padding: .5rem;
-}
-
-.directory-card {
-    margin: 0;
-    padding: 0;
 }
 
 #spotlight-card section,
@@ -458,10 +468,6 @@ figcaption {
     min-height: 20rem;
     margin: 0 auto;
     padding: 0 2%;
-}
-
-.join h2 {
-    padding-top: 1rem;
 }
 
 fieldset {

@@ -5,8 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Chamber of Commerce Home Page</title>
-        <meta name="description"
-            content="The Chamber of Commerce Home Page. This home page welcomes the visitor with key information and invitations to engage with the organization.">
+        <meta name="description" content="The Chamber of Commerce Home Page. This home page welcomes the visitor with key information and invitations to engage with the organization.">
         <meta name="author" content="Aster Paredes Morales">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
@@ -18,23 +17,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway&display=swap" rel="stylesheet">
         <meta property="og:title" content="Inglewood Chamber of Commerce Home Page">
         <meta property="og:type" content="website">
-        <meta property="og:image"
-            content="https://asterparedes.github.io/wdd230/chamber/images/chamber-hero-large.webp">
+        <meta property="og:image" content="https://asterparedes.github.io/wdd230/chamber/images/chamber-logo-large.webp">
         <meta property="og:url" content="https://asterparedes.github.io/wdd230/chamber">
     </head>
-
     <body>
         <header>
             <div class="logo">
                 <picture>
                     <source srcset="images/chamber-logo.webp" media="(max-width: 200px)">
-                    <img src="images/chamber-logo-large.webp" alt="Inglewood Chamber of Commerce Logo" width="300"
-                        height="250">
+                    <img src="images/chamber-logo-large.webp" alt="Inglewood Chamber of Commerce Logo" loading="lazy"
+                        width="300" height="250">
                 </picture>
                 <h1>Inglewood <br> Chamber of Commerce</h1>
             </div>
         </header>
-        <a id="menu" href="#"></a>
+        <div id="menu"></div>
         <nav class="navigation">
             <a href="index.html" class="active">Home</a>
             <a href="discover.html">Discover</a>
@@ -55,31 +52,35 @@
                     <source srcset="images/chamber-hero-medium.webp" media="(max-width: 800px)">
                     <img src="images/chamber-hero-large.webp" alt="Having a meeting" width="1300" height="750">
                 </picture>
+                <a href="join.html">Join the Chamber</a>
             </div>
             <section class="card">
                 <h2>Current Events</h2>
                 <div class="event-info">
-                    <h3>Join Us for a Spectacular Fun Run!</h3>
+                    <h3>Color Blast Fun Run</h3>
                     <p>Date: April 20, 2024</p>
-                    <p>Time: 9:00 am</p>
+                    <p>Time: 7:00 am</p>
+                    <p>Location: Inglewood Park</p>
+                    <p>Get Ready to Paint the Town with Fun! Dive into a kaleidoscope of fun and fitness at our Color
+                        Blast Fun Run! This electrifying event promises a burst of excitement for everyone involved.</p>
+                </div>
+                <div class="event-info">
+                    <h3> Business Networking Mixer</h3>
+                    <p>Date: July 17, 2024</p>
+                    <p>Time: 10:00 am</p>
                     <p>Location: Inglewood Chamber Office</p>
-                    <p>Get ready to lace up your sneakers and join the excitement! Our Fun Run Extravaganza promises to
-                        be an event filled with laughter, fitness, and fun for all ages.</p>
+                    <p>Join us for an exclusive Business Networking Mixer, where entrepreneurs, professionals, and industry leaders come together to forge valuable
+                        connections and explore new opportunities.</p>
                 </div>
             </section>
             <section class="card">
                 <h2>Weather</h2>
-                <!-- <div id="weather">
-                    <p>Temperature: <span id="temperature">50</span>°F</p>
-                    <p>Wind Speed: <span id="windspeed">5</span> mph</p>
-                    <p>Wind Chill: <span id="windchill"></span>°F</p>
-                </div> -->
                 <div class="weather-info">
                     <h3>Inglewood Current Weather</h3>
                     <div class="current-weather">
                         <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
                         <p><span id="current-temp"></span> - <span id="description"></span></p>
-                        <p id="windspeed"></p>
+                        <p id="humidity"></p>
                         <p id="windchill"></p>
                     </div>
                     <h3>3-Day Forecast</h3>
@@ -97,19 +98,16 @@
                     </div>
                 </div>
             </section>
-
             <h2>Member Spotlight</h2>
-            <section class="card">
-                <div id="spotlight-card"></div>
-            </section>
+            <div id="spotlight-card"></div>
         </main>
         <footer>
             <div class="contact-info">
-                <h4>Address</h4>
+                <h3>Address</h3>
                 <p>4228 Lennox Blvd, Inglewood, CA 90403</p>
             </div>
             <div class="contact-info">
-                <h4>Contact Us</h4>
+                <h3>Contact Us</h3>
                 <p>Telephone #: 424-123-4567</p>
             </div>
             <div class="social">
@@ -129,7 +127,6 @@
         </footer>
         <script src="scripts/main.js"></script>
         <script src="scripts/mode.js"></script>
-        <!-- <script src="scripts/windchill.js"></script> -->
         <script src="scripts/weather.js"></script>
         <script src="scripts/forecast.js"></script>
         <script src="scripts/banner.js"></script>

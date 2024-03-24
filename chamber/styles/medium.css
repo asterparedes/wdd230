@@ -29,7 +29,7 @@
     #mode {
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        right: 3rem;
     }
 
     main {
@@ -48,7 +48,21 @@
         grid-column: span 3;
     }
 
-    .card:nth-child(5) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-info:nth-child(2) {
+        grid-column: 2 / 3;
+    }
+
+    .social img {
+        grid-column: 3 / 4;
+        width: 8%;
+    }
+
+    #spotlight-card {
         grid-column: span 3;
     }
 
@@ -67,26 +81,6 @@
     
     .visit-card p {
         font-size: 1.5rem;
-    }
-
-    .join h2 {
-        font-size: 2.5rem;
-    }
-    
-    table {
-        grid-column: 2 / 4;
-    }
-
-    tr:first-child th{
-        font-size: 2rem;
-    }
-
-    tr:nth-child(2) th{
-        font-size: 1.5rem;
-    }
-    
-    tbody td:first-child {
-        font-size: 1.2rem;
     }
 
     .directory {
@@ -124,11 +118,23 @@
         align-self: center;
     }
 
-    footer .social img {
-        width: 5%;
+    .join h2 {
+        font-size: 2.5rem;
     }
     
-    footer img {
-        width: 30%;
+    table {
+        grid-column: 2 / 4;
+    }
+
+    tr:first-child th{
+        font-size: 2rem;
+    }
+
+    tr:nth-child(2) th{
+        font-size: 1.5rem;
+    }
+    
+    tbody td:first-child {
+        font-size: 1.2rem;
     }
 }

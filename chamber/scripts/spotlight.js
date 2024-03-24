@@ -35,7 +35,6 @@ const displaySpotlight = (member) => {
     membership.textContent = `Membership Level: ${member.membershipLevel}`;
 
     card.appendChild(logo);
-    card.appendChild(companyName);
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(websiteUrl);
