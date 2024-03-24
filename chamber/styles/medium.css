@@ -36,32 +36,20 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    main .hero-card {
+    .hero-card {
         grid-column: span 3;
     }
 
-    main .card:nth-child(2) {
+    .card:nth-child(2) {
         grid-column: span 2;
-    }
-
-    main .card:nth-child(3) {
-        grid-column: 3 / 4;
     }
 
     main h2 {
         grid-column: span 3;
     }
 
-    main .card:nth-child(5) {
-        grid-column: 1 / 2;
-    }
-
-    main .card:nth-child(6) {
-        grid-column: 2 / 3;
-    }
-
-    main .card:nth-child(7) {
-        grid-column: 3 / 4;
+    .card:nth-child(5) {
+        grid-column: span 3;
     }
 
     .discover {

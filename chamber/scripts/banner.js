@@ -9,19 +9,30 @@
 //     }
 // });
 
-// function showBanner() {
-//     document.querySelector('.event-banner').style.display = 'block';
-// }
+const eventButton = document.querySelector('#event-button');
+const eventBanner = document.querySelector('.event-banner');
+const day = new Date();
+const dayOfWeek = day.getDay();
 
-// function closeBanner() {
-//     document.querySelector('.event-banner').style.display = 'none';
-// }
-
-function eventBanner() {
-    let event = document.querySelector('.event-banner');
-    if (event.style.display === 'none') {
-        event.style.display = 'block';
+const initialize = () => {
+    if (dayOfWeek >= 1 && dayOfWeek <=3) {
+        showBanner();
     } else {
-        event.style.display = 'none';
+        closeBanner();
     }
 }
+
+const showBanner = () => {
+    eventBanner.style.display = 'block';
+};
+
+const closeBanner = () => {
+    eventBanner.style.display = 'none';
+};
+
+
+eventButton.addEventListener('click', () => {
+    closeBanner();
+});
+
+initialize();

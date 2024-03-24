@@ -177,7 +177,7 @@ h2 {
 
 .weather-info {
     display: grid;
-    grid-template-columns: repeat(auto, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-gap: .5rem;
     padding: .5rem;
 }

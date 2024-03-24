@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Chamber of Commerce Home Page</title>
-        <meta name="description" content="The Chamber of Commerce Home Page. This home page welcomes the visitor with key information and invitations to engage with the organization.">
+        <meta name="description"
+            content="The Chamber of Commerce Home Page. This home page welcomes the visitor with key information and invitations to engage with the organization.">
         <meta name="author" content="Aster Paredes Morales">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
@@ -16,34 +18,37 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway&display=swap" rel="stylesheet">
         <meta property="og:title" content="Inglewood Chamber of Commerce Home Page">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://asterparedes.github.io/wdd230/chamber/images/chamber-hero-large.webp">
+        <meta property="og:image"
+            content="https://asterparedes.github.io/wdd230/chamber/images/chamber-hero-large.webp">
         <meta property="og:url" content="https://asterparedes.github.io/wdd230/chamber">
     </head>
-    <body>    
+
+    <body>
         <header>
             <div class="logo">
                 <picture>
                     <source srcset="images/chamber-logo.webp" media="(max-width: 200px)">
-                    <img src="images/chamber-logo-large.webp" alt="Inglewood Chamber of Commerce Logo" width="300" height="250">
+                    <img src="images/chamber-logo-large.webp" alt="Inglewood Chamber of Commerce Logo" width="300"
+                        height="250">
                 </picture>
                 <h1>Inglewood <br> Chamber of Commerce</h1>
             </div>
         </header>
         <a id="menu" href="#"></a>
-            <nav class="navigation">
-                <a href="index.html" class="active">Home</a>
-                <a href="discover.html">Discover</a>
-                <a href="directory.html">Directory</a>
-                <a href="join.html">Join</a>
-            </nav>
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
         <div id="mode">
             🌙
         </div>
         <main>
             <div class="hero-card">
                 <div class="event-banner">
-                    <button onclick="eventBanner()">❌</button>
-                    <p>Meet and Greet Event on Wednesday at 7:00 pm</p>
+                    <button id="event-button">❌</button>
+                    <p>Join the Inglewood Chamber of Commerce for a Meet and Greet event on Wednesday at 7:00 pm</p>
                 </div>
                 <picture>
                     <source srcset="images/chamber-hero-small.webp" media="(max-width: 500px)">
@@ -54,10 +59,12 @@
             <section class="card">
                 <h2>Current Events</h2>
                 <div class="event-info">
-                    <h3>Fun Run Activity</h3>
+                    <h3>Join Us for a Spectacular Fun Run!</h3>
                     <p>Date: April 20, 2024</p>
                     <p>Time: 9:00 am</p>
                     <p>Location: Inglewood Chamber Office</p>
+                    <p>Get ready to lace up your sneakers and join the excitement! Our Fun Run Extravaganza promises to
+                        be an event filled with laughter, fitness, and fun for all ages.</p>
                 </div>
             </section>
             <section class="card">
@@ -79,45 +86,21 @@
                     <div class="forecast">
                         <p id="day1"></p>
                         <p><span id="forecast1"> </span> &deg;F</p>
-                    </div> 
+                    </div>
                     <div class="forecast">
                         <p id="day2"></p>
                         <p><span id="forecast2"> </span> &deg;F</p>
-                    </div> 
+                    </div>
                     <div class="forecast">
-                        <p id="day3">></p> 
-                        <p><span id="forecast3"> </span> &deg;F</p> 
-                    </div> 
+                        <p id="day3"></p>
+                        <p><span id="forecast3"> </span> &deg;F</p>
+                    </div>
                 </div>
             </section>
 
             <h2>Member Spotlight</h2>
             <section class="card">
-                <h3>The Company</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
-                    cumque nemo repellendus, aperiam debitis suscipit nobis sequi. Sunt,
-                    commodi dicta id nesciunt aperiam consectetur! Placeat natus totam
-                    recusandae alias incidunt.
-                </p>
-            </section>
-            <section class="card">
-                <h3>Bayanihan Foundation</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-                    suscipit distinctio perferendis iste similique, quisquam amet, atque
-                    deleniti tenetur, officia earum magni reprehenderit quis delectus enim
-                    aliquid vitae sit quod.
-                </p>
-            </section>
-            <section class="card">
-                <h3>SMILE Organization</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-                    nostrum aut provident numquam esse excepturi accusamus totam illum
-                    sit? Omnis illum quaerat ea laboriosam iste inventore in voluptatibus.
-                    Ad, cupiditate.
-                </p>
+                <div id="spotlight-card"></div>
             </section>
         </main>
         <footer>
@@ -150,5 +133,7 @@
         <script src="scripts/weather.js"></script>
         <script src="scripts/forecast.js"></script>
         <script src="scripts/banner.js"></script>
+        <script src="scripts/spotlight.js"></script>
     </body>
+
 </html>

@@ -1,7 +1,7 @@
 const grid = document.querySelector('#grid');
 const list = document.querySelector('#list');
 const directory = document.querySelector('.directory-info');
-const url = "https://asterparedes.github.io/wdd230/chamber/data/members.json";
+const memberURL = "https://asterparedes.github.io/wdd230/chamber/data/members.json";
 
 grid.addEventListener('click', () => {
     directory.classList.add('grid');
@@ -15,9 +15,8 @@ list.addEventListener('click', () => {
 
 
 const getMemberData = async () => {
-    const response = await fetch(url);
+    const response = await fetch(memberURL);
     const data = await response.json();
-    console.log(data);
     displayMembers(data.companies);
 }
 
@@ -40,7 +39,7 @@ const displayMembers = (members) => {
         companyName.textContent = member.name;
         address.textContent = member.address;
         phone.textContent = member.phoneNumber;
-        websiteUrl.textContent = member.website;
+        websiteUrl.textContent = member.name;
         websiteUrl.href = member.website;
         membership.textContent = `Membership Level: ${member.membershipLevel}`;
 
