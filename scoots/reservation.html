@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoots Reservation Page</title>
+    <meta name="description" content="Reservation page welcomes visitors with important information and opportunities.">
+    <meta name="author" content="Aster Paredes Morales">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Scoots Reservation Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://asterparedes.github.io/wdd230/chamber/images/chamber-logo-large.webp">
+    <meta property="og:url" content="https://asterparedes.github.io/wdd230/scoots">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/scoots-logo.webp" alt="Scoots Logo" loading="lazy" width="250" height="250">
+            <h1>Scoots</h1>
+        </div>
+    </header>
+    <div id="responsive-menu"></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rentals.html">Rentals</a>
+        <a href="reservation.html" class="active">Reservation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div id="mode">
+        🌑
+    </div>
+    <main>
+        <div class="reservation">
+            <div class="rental-agreement-info">
+                <h2>Rental Services and Agreements</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
+            <div class="reservation-form">
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Reservation Form</legend>
+                        <label for="date">Date<input type="text" required></label>
+                        <label for="rental-type"><input type="text" required></label>
+                        <label for="number"><input type="text" required></label>
+                        <label for="phone">Phone Number*<input type="tel" name="phone" id="phone" required></label>
+                        <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
+                        <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
+                        <label for="email">Email Address*<input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                        <label for="country">State/Country*<input type="text" name="country" id="country" required></label>
+                        <label for="cruise-line">Cruise Line<input type="text" name="cruise-line" id="cruise-line"></label>
+                        <label for="comments">Special Instructions/Comments</label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </fieldset>
+                    <button type="submit">Reserve Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-logo.webp" alt="fb icon" loading="lazy" width="64" height="64">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin-logo.webp" alt="linkedin icon" loading="lazy" width="64" height="64">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy" width="64" height="64">
+            </a>
+        </div>
+        <div class="contact-info">
+            <section class="address">
+                <h3>Locations</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur.</p>
+
+                <h3>Telephone #</h3>
+                <p>(310) 456-7890</p>
+            </section>
+        </div>
+        <div class="attributions"></div>
+    </footer>
+</body>
+
+</html>
