@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Scoots Contact Page</title>
-        <meta name="description" content="Contact page welcomes visitors with important information and opportunities.">
+        <title>Scoots Home Page</title>
+        <meta name="description" content="Home page welcomes visitors with important information and opportunities.">
         <meta name="author" content="Aster Paredes Morales">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
@@ -13,7 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet">
-        <meta property="og:title" content="Scoots Contact Page">
+        <meta property="og:title" content="Scoots Home Page">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://asterparedes.github.io/wdd230/chamber/images/chamber-logo-large.webp">
         <meta property="og:url" content="https://asterparedes.github.io/wdd230/scoots">
@@ -29,26 +29,18 @@
                 <h1>Scoots</h1>
             </div>
         </header>
-        <div id="mobile-menu"></div>
+        <div id="responsive-menu"></div>
         <nav class="navigation">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="rentals.html">Rentals</a>
             <a href="reservation.html">Reservation</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
         <div id="mode">
             🌑
         </div>
         <main>
-            <div class="contact">
-                <form method="get" action="message.html">
-                    <legend>Contact Us</legend>
-                    <label for="fname">First Name*<input type="text" name="fname" id="fname" required></label>
-                    <label for="lname">Last Name*<input type="text" name="lname" id="lname" required></label>
-                    <label for="fname"><input type="text" name="fname" id="fname" required></label>
-                </form>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11673.264967733694!2d-86.9474075899264!3d20.504658236733274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1712284862873!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            
         </main>
         <footer>
             <div class="contact-info">
@@ -77,5 +69,6 @@
             <div class="attributions"></div>
         </footer>
         <script src="scripts/main.js"></script>
+        <script src="scripts/weather.js"></script>
     </body>
 </html>

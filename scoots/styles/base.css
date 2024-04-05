@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #1C2541;
+    --secondary-color: #6FFFE9;
+    --accent1-color: #F4D58D;
+    --accent2-color: #84C2C1;
+    --logo-font: Pacifico, sans-serif;
+    --heading-font: Josefin-Sans, helvetica, sans-serif;
+    --paragraph-font: Josefin-Sans, helvetica, sans-serif;
+    --nav-font: Josefin-Sans, helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+header, main, nav, footer {
+    width: 1600px;
+    margin: auto;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    border: none;
+    border-radius: 100%;
+}
+
+.logo h1 {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 45px;
+    text-align: left;
+    padding: .5rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 5rem;
+}
+
+h2, h3, footer {
+    font-family: var(--heading-font);
+}
+
+nav {
+    font-family: var(--nav-font);
+    margin: auto;
+}
+
+footer {
+    padding: 1rem;
+    font-size: 18px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.contact-info,
+.social {
+    padding: .5rem;
+}
+
+.address {
+    padding-top: .5rem;
+}
+
+.social img {
+    width: 2%;
+    height: auto;
+    object-fit: cover;
+    margin: .3rem;
+    border-radius: 75%;
+}

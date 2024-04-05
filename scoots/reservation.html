@@ -23,12 +23,16 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/scoots-logo.webp" alt="Scoots Logo" loading="lazy" width="250" height="250">
+            <picture>
+                <source srcset="images/scoots-logo-large.webp" media="(max-width: 300px)">
+                <source srcset="images/scoots-logo-medium.webp" media="(max-width: 275px)">
+                <img src="images/scoots-logo.webp" alt="Scoots Logo" loading="lazy" width="200" height="200">
+            </picture>
             <h1>Scoots</h1>
         </div>
     </header>
     <div id="responsive-menu"></div>
-    <nav>
+    <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="rentals.html">Rentals</a>
         <a href="reservation.html" class="active">Reservation</a>
@@ -70,13 +74,25 @@
                         <label for="comments">Special Instructions/Comments</label>
                         <textarea name="comments" id="comments"></textarea>
                     </fieldset>
-                    <button type="submit">Reserve Now</button>
+                    <button type="submit">Reserve my Ride</button>
                 </form>
             </div>
         </div>
     </main>
     <footer>
+        <div class="contact-info">
+            <section class="address">
+                <h3>Locations</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur.</p>
+            </section>
+            <section class="address">
+                <h3>Telephone #</h3>
+                <p>(310) 456-7890</p>
+            </section>
+        </div>
         <div class="social">
+            <h3>Follow us on our Social</h3>
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook-logo.webp" alt="fb icon" loading="lazy" width="64" height="64">
             </a>
@@ -87,18 +103,9 @@
                 <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy" width="64" height="64">
             </a>
         </div>
-        <div class="contact-info">
-            <section class="address">
-                <h3>Locations</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur.</p>
-
-                <h3>Telephone #</h3>
-                <p>(310) 456-7890</p>
-            </section>
-        </div>
         <div class="attributions"></div>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

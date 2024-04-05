@@ -21,12 +21,16 @@
     <body>
         <header>
             <div class="logo">
-                <img src="images/scoots-logo.webp" alt="Scoots Logo" loading="lazy" width="250" height="250">
+                <picture>
+                    <source srcset="images/scoots-logo-large.webp" media="(max-width: 300px)">
+                    <source srcset="images/scoots-logo-medium.webp" media="(max-width: 275px)">
+                    <img src="images/scoots-logo.webp" alt="Scoots Logo" loading="lazy" width="200" height="200">
+                </picture>
                 <h1>Scoots</h1>
             </div>
         </header>
         <div id="responsive-menu"></div>
-        <nav>
+        <nav class="navigation">
             <a href="index.html" class="active">Home</a>
             <a href="rentals.html">Rentals</a>
             <a href="reservation.html">Reservation</a>
@@ -43,11 +47,12 @@
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                     <picture>
-                        <source srcset="" media="">
-                        <img src="" alt="">
+                        <source srcset="images/scoots-hero-large.webp" media="(max-width: 1300px)">
+                        <source srcset="images/scoots-hero-medium.webp" media="(max-width: 950px)">
+                        <img src="images/scoots-hero.webp" alt="Beautiful Beach View at San Miguel de Cozumel" loading="lazy" width="500" height="290">
                     </picture>
                 </div>
-                <a href="reservation.html">Reserve Now</a>
+                <a href="reservation.html">Reserve a Ride</a>
                 <div class="home-card">
                     <div class="featured">
                         <h2>Featured Services</h2>
@@ -73,7 +78,19 @@
             </div>
         </main>
         <footer>
+            <div class="contact-info">
+                <section class="address">
+                    <h3>Locations</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur.</p>
+                </section>
+                <section class="address">
+                    <h3>Telephone #</h3>
+                    <p>(310) 456-7890</p>
+                </section>
+            </div>
             <div class="social">
+                <h3>Follow us on our Social</h3>
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook-logo.webp" alt="fb icon" loading="lazy" width="64" height="64">
                 </a>
@@ -84,17 +101,8 @@
                     <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy" width="64" height="64">
                 </a>
             </div>
-            <div class="contact-info">
-                <section class="address">
-                    <h3>Locations</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, temporibus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aspernatur.</p>
-
-                    <h3>Telephone #</h3>
-                    <p>(310) 456-7890</p>
-                </section>
-            </div>
             <div class="attributions"></div>
         </footer>
+        <script src="scripts/main.js"></script>
     </body>
 </html>
