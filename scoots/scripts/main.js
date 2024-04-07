@@ -1,11 +1,11 @@
-const hamButton = document.querySelector('#mobile-menu');
-const navigation = document.querySelector('.navigation');
+const mobileButton = document.querySelector('#mobile-menu');
+const navigation = document.querySelector('.main-menu');
 const modeButton = document.querySelector('#mode');
 const main = document.querySelector('main');
 
-hamButton.addEventListener('click', () => {
+mobileButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
+    mobileButton.classList.toggle('open');
 });
 
 modeButton.addEventListener('click', () => {
