@@ -46,10 +46,7 @@ const displayCurrentWeather = (data) => {
 const displayForecast = (data) => {
     const nextDayForecast = data.list.filter(x => x.dt_txt.includes('15:00:00'));
     let day = 0;
-    const nextDay = ['Tomorrow'];
     nextDayForecast.forEach(forecast => {
-        const d =  new Date(forecast.dt_txt);
-        document.querySelector(`#next-day${day+1}`).innerHTML = nextDay[d.getDay()];
         document.querySelector(`#next-day-temp${day+1}`).innerHTML = forecast.main.temp_max.toFixed(0);
         document.querySelector(`#next-day-humidity${day+1}`).innerHTML = forecast.main.humidity;
         day++;

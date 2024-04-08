@@ -8,7 +8,6 @@
         <meta name="author" content="Aster Paredes Morales">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="icon" href="images/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,59 +19,50 @@
         <meta property="og:url" content="https://asterparedes.github.io/wdd230/scoots">
     </head>
     <body>
-        <div class=banner-weather">
-            <button id="weather-button">❌</button>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
         <header>
             <div class="main-logo">
                 <picture>
-                    <source srcset="images/scoots-logo-large.webp" media="(max-width: 300px)">
                     <img src="images/scoots-logo.webp" alt="Scoots Logo" loading="lazy" width="200" height="200">
                 </picture>
                 <h1>Scoots</h1>
             </div>
+            <div id="mobile-menu"></div>
+            <nav class="main-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservation.html">Reservation</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div id="mode">
+                🌑
+            </div>
         </header>
-        <div id="mobile-menu"></div>
-        <nav class="main-menu">
-            <a href="index.html" class="active">Home</a>
-            <a href="rentals.html">Rentals</a>
-            <a href="reservation.html">Reservation</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div id="mode">
-            🌑
-        </div>
         <main> 
-            <!-- <div class="hero-content">
+           <!-- <div id="hero-content">
                 <picture>
-                    <source srcset="images/scoots-hero.webp" media="(max-width: 500px)">
-                    <source srcset="images/scoots-hero-medium.webp" media="(max-width: 800px)">
+                    <source srcset="images/scoots-hero.webp" media="(max-width: 400px)">
                     <img src="images/scoots-hero-large.webp" alt="Beautiful Beach View at San Miguel de Cozumel" loading="lazy" width="1200" height="675">
                 </picture>
-            </div> -->
-            <!-- <a href="reservation.html">Rent a Ride</a> -->
-            <div class="home-card">
-                <div class="featured">
-                    <h2>Rental Services</h2>
-                    <div class="featured-info"></div>
-                </div>
-                <div class="weather">
-                    <h2>Weather</h2>
-                    <div class="weather-info">
-                        <h3>Cozumel Current Weather</h3>
-                        <div class="current-weather">
-                            <img id="weather-icon" src="" alt="">
-                            <p id="current-temperature"></p>
-                            <p><span id="current-description"></span> | <span id="current-humidity"></span></p>
-                        </div>
-                        <div class="forecast">
-                            <p id="next-day1"></p>
-                            <p><span id="next-day-temp1"></span> &deg;F | Humidity: <span id="next-day-humidity1"></span>%</p>
-                        </div>
+                <a href="reservation.html">Rent a Ride</a>
+           </div> -->
+           <h2>Rental Services</h2>
+            <div id="rental-info"></div>
+           <section class="home-card">
+                <h2>Weather</h2>
+                <div class="weather-info">
+                    <h3>Cozumel</h3>
+                    <div class="current-weather">
+                        <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                        <p id="current-temperature"></p>
+                        <p><span id="current-description"></span> | <span id="current-humidity"></span></p>
+                    </div>
+                    <h3>Weather Tomorrow</h3>
+                    <div class="forecast">
+                        <p id="next-day1"></p>
+                        <p><span id="next-day-temp1"></span> &deg;F | Humidity: <span id="next-day-humidity1"></span>%</p>
                     </div>
                 </div>
-            </div>
+           </section>
         </main>
         <footer>
             <section class="office-hours">
@@ -93,7 +83,6 @@
                     <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy" width="64" height="64">
                 </a>
             </div>
-            <div class="attributions"></div>
         </footer>
         <script src="scripts/main.js"></script>
         <script src="scripts/weather.js"></script>

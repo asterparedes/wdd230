@@ -14,8 +14,8 @@ modeButton.addEventListener('click', () => {
         main.style.color = '#fff';
         modeButton.textContent = '🌞';
     } else {
-        // main.style.background = '#FAF3DD';
-        // main.style.color = '#32292F'; change the color
+        main.style.background = '#E7F7F5';
+        main.style.color = '#28262C';
         modeButton.textContent = '🌑';
     }
 });
