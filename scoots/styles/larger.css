@@ -1,4 +1,4 @@
-@media screen  and (min-width: 650px) {
+@media screen  and (min-width: 1000px) {
     header {
         display: flex;
     }
@@ -24,14 +24,14 @@
     #mode {
         position: absolute;
         top: 1rem;
-        right: 25rem;
+        right: 10rem;
     }
 
     main {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .hero-content {
+    #hero-content {
         grid-column: span 4;
     }
 
@@ -55,6 +55,7 @@
     .social {
         grid-column: span 3;
     }
+
     .social img {
         width: 3%;
     }
@@ -64,10 +65,10 @@
     }
 
     .contact {
-        grid-template: 200px / 1fr 1fr;
+        grid-template: 500px 500px/ 1fr 1fr;
     }
 
-    .contact-info {
+    .contact form {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
@@ -76,8 +77,16 @@
         font-size: 1.5rem;
     }
 
-    form {
+    .contact-info {
         grid-column: 2 / 3;
-        grid-row: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .reservation {
+        grid-template-columns: 1fr 500px;
+    }
+
+    .reservation form {
+        grid-column: 1 / 2;
     }
 }

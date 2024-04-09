@@ -129,15 +129,20 @@ main {
     text-align: center;
 }
 
-/* .hero-content {
+#hero-content {
     position: relative;
 }
 
-.hero-content img {
+#hero-content img {
     width: 100%;
     height: auto;
     object-fit: cover;
-} */
+}
+
+#hero-content a {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
 
 .home-card {
     margin: 1rem;
@@ -214,19 +219,24 @@ footer p {
 }
 
 .social {
+    padding: 1rem;
+}
+
+.social a {
     padding: .5rem;
 }
 
 .social img {
     width: 5%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 75%;
 }
 
 /* || CONTACT PAGE */
 
-.contact {
+.contact,
+.reservation {
     min-height: 20rem;
     margin: 0 auto;
     padding: 0 2%;
@@ -262,6 +272,13 @@ fieldset {
 fieldset p {
     font-size: 1rem;
     text-align: left;
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+.reservation fieldset p {
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 legend {
@@ -271,6 +288,11 @@ legend {
     font-family: var(--accent-font);
     font-weight: 700;
     text-align: left;
+}
+
+.reservation legend:nth-child(2) {
+    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 label {
@@ -283,6 +305,8 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="date"],
+input[type="number"],
 textarea {
     background-color: #fff;
     display: block;
@@ -300,6 +324,10 @@ textarea {
     height: 100px;
 }
 
+input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
 button[type="submit"] {
     border: none;
     background-color: var(--accent2-color);
@@ -315,8 +343,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
     opacity: .9;
 }
 
@@ -327,3 +355,26 @@ iframe {
     margin: 0 auto;
     padding: 1rem;
 }
+
+.agreement-info {
+    color: var(--secondary-color);
+    text-align: left;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.agreement-info h2 {
+    padding: .5rem;
+    font-family: var(--accent-font);
+    font-size: 1.5rem;
+}
+
+.agreement-info ul {
+    padding: .5rem;
+}
+
+.agreement-info li {
+    padding: .5rem;
+}
+

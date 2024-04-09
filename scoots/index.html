@@ -8,6 +8,7 @@
         <meta name="author" content="Aster Paredes Morales">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="icon" href="images/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
         <meta property="og:title" content="Scoots Home Page">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://asterparedes.github.io/wdd230/chamber/images/chamber-logo-large.webp">
+        <meta property="og:image" content="https://asterparedes.github.io/wdd230/scoots/images/scoots-logo-large.webp">
         <meta property="og:url" content="https://asterparedes.github.io/wdd230/scoots">
     </head>
     <body>
@@ -38,13 +39,14 @@
             </div>
         </header>
         <main> 
-           <!-- <div id="hero-content">
+           <div id="hero-content">
                 <picture>
-                    <source srcset="images/scoots-hero.webp" media="(max-width: 400px)">
+                    <source srcset="images/scoots-hero.webp" media="(max-width: 500px)">
+                    <source srcset="images/scoots-hero-medium.webp" media="(max-width: 950px)">
                     <img src="images/scoots-hero-large.webp" alt="Beautiful Beach View at San Miguel de Cozumel" loading="lazy" width="1200" height="675">
                 </picture>
                 <a href="reservation.html">Rent a Ride</a>
-           </div> -->
+           </div>
            <h2>Rental Services</h2>
             <div id="rental-info"></div>
            <section class="home-card">
@@ -52,7 +54,7 @@
                 <div class="weather-info">
                     <h3>Cozumel</h3>
                     <div class="current-weather">
-                        <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                        <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="" loading="lazy" width="50px" height="50px">
                         <p id="current-temperature"></p>
                         <p><span id="current-description"></span> | <span id="current-humidity"></span></p>
                     </div>

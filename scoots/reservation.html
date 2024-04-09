@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet">
     <meta property="og:title" content="Scoots Reservation Page">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://asterparedes.github.io/wdd230/chamber/images/chamber-logo-large.webp">
+    <meta property="og:image" content="https://asterparedes.github.io/wdd230/scoots/images/scoots-logo-large.webp">
     <meta property="og:url" content="https://asterparedes.github.io/wdd230/scoots">
 </head>
 <body>
@@ -38,7 +38,47 @@
             🌑
         </div>
     </header>
-    <main>
+    <main class="reservation">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Reservation Form</legend>
+                <label for="reserve-date">Date<input type="date" name="reserve-date" id="reserve-date" required></label>
+                <label for="first-name">First Name<input type="text" name="first-name" id="first-name" required></label>
+                <label for="last-name">Last Name<input type="text" name="last-name" id="last-name" required></label>
+                <label for="phone-number">Phone Number<input type="number" name="phone-number" id="phone-number" required></label>
+                <label for="email-address">Email Address<input type="text" name="email-address" id="email-address" placeholder="name@example.com" required></label>
+                <label for="country">State/Country<input type="text" name="country" id="country" required></label>
+                <label for="num-of-vehicle">Number of Vehicle<input type="text" name="num-of-vehicle" id="num-of-vehicle" required></label>
+                
+                <legend>Types of Rentals</legend>
+                <p>Honda Motor Scooters</p>
+                <label for="honda-metro"><input type="checkbox" name="rental-types" id="honda-metro" value="honda-metro">Honda Metropolitan (49cc) - 1person</label>
+                <label for="honda-dio"><input type="checkbox" name="rental-types" id="honda-dio" value="honda-dio">Honda Dio (110cc) - 2 person</label>
+                <label for="honda-pcx"><input type="checkbox" name="rental-types" id="honda-pcx" value="honda-pcx">Honda PCX150 (149cc) - 2person</label>
+                
+                <p>Side-by-Side ATVs</p>
+                <label for="honda-pioneer"><input type="checkbox" name="rental-types" id="honda-pioneer" value="honda-pioneer">Honda Pioneer 1000 - 4person</label>
+                
+                <p>Jeeps</p>
+                <label for="wrangler-4door"><input type="checkbox" name="rental-types" id="wrangler-4door" value="wrangler-4door">Jeep Wrangler - 4 door manual with A/C - 5person</label>
+                <label for="wrangler-2door"><input type="checkbox" name="rental-types" id="wrangler-2door" value="wrangler-2door">Jeep Wrangler - 2 door - open air - manual - 4person</label>
+            </fieldset>
+        </form>
+        <div class="agreement-info">
+            <h2>Rental Services and Agreements</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </div>
 
     </main>
     <footer>
