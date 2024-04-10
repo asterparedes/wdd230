@@ -62,7 +62,13 @@
                 <p>Jeeps</p>
                 <label for="wrangler-4door"><input type="checkbox" name="rental-types" id="wrangler-4door" value="wrangler-4door">Jeep Wrangler - 4 door manual with A/C - 5person</label>
                 <label for="wrangler-2door"><input type="checkbox" name="rental-types" id="wrangler-2door" value="wrangler-2door">Jeep Wrangler - 2 door - open air - manual - 4person</label>
+            
+                <label for="cruise">Cruise Line<input type="text" name="cruise" id="cruise"></label>
+                <label for="instructions">Special Instructions/Comments</label>
+                <textarea name="instructions" id="instructions"></textarea>
+                <input type="hidden" name="timestamp" id="timestamp">
             </fieldset>
+            <button type="submit">Book a Ride</button>
         </form>
         <div class="agreement-info">
             <h2>Rental Services and Agreements</h2>
@@ -79,7 +85,6 @@
                 <li>Rentals may be returned to either physical location.</li>
             </ul>
         </div>
-
     </main>
     <footer>
         <section class="office-hours">
@@ -100,6 +105,7 @@
                 <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy" width="64" height="64">
             </a>
         </div>
+        <p class="student-name">&copy;<span id="year"></span> Scoots | Aster Paredes Morales | WDD 230 Final Project</p>
     </footer>
     <script src="scripts/main.js"></script>
 </body>

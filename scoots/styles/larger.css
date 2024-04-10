@@ -1,4 +1,4 @@
-@media screen  and (min-width: 1000px) {
+@media screen  and (min-width: 1280px) {
     header {
         display: flex;
     }
@@ -53,15 +53,24 @@
     }
 
     .social {
-        grid-column: span 3;
+        grid-column: span 3 ;
     }
 
     .social img {
-        width: 3%;
+        width: 2%;
+    }
+
+    .student-name {
+        grid-column: span 3;
     }
 
     #weather-icon {
         width: 10%;
+    }
+
+    #rental-type {
+        overflow-x: hidden;
+        grid-column: span 3;
     }
 
     .contact {
@@ -83,7 +92,7 @@
     }
     
     .reservation {
-        grid-template-columns: 1fr 500px;
+        grid-template-columns: 650px 1fr;
     }
 
     .reservation form {

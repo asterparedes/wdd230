@@ -1,3 +1,5 @@
+document.querySelector('#year').textContent = new Date().getFullYear();
+
 const mobileButton = document.querySelector('#mobile-menu');
 const navigation = document.querySelector('.main-menu');
 const modeButton = document.querySelector('#mode');
