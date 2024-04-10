@@ -138,9 +138,58 @@ main {
     object-fit: cover;
 }
 
-#hero-content a {
+.weather-banner {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
+    padding: .3rem;
+}
+
+#current-temp-max {
+    font-size: 1.75rem;
+}
+
+#weather-button {
+    font-size: 1rem;
+    float: right;
+    border: none;
+    background-color: var(--accent2-color);
+    padding: .5rem;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    border: none;
+    color: white;
+}
+
+.hero-text h2 {
+    font-family: var(--accent-font);
+}
+
+.hero-text p {
+    padding-bottom: .5rem;
+}
+
+.hero-text a {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.hero-text a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
 }
 
 .home-card {
@@ -151,13 +200,38 @@ main {
 }
 
 #rental-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+#rental-info section {
     background-color: var(--accent2-color);
     color: var(--secondary-color);
+    box-shadow: 0 0 15px var(--secondary-color);
     margin: 1rem;
-    border-radius: 1rem;
-    padding: .75rem;
+    border-radius: 1rem .25rem;
+    padding: .5rem;
     font-size: 1.25rem;
     text-align: center;
+}
+
+#rental-info img {
+    border: none;
+}
+
+#rental-info section img {
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+#rental-info section p {
+    font-size: 1rem;
+    color: var(--secondary-color);
 }
 
 .weather-info {

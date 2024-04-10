@@ -1,3 +1,6 @@
+const weatherBanner = document.querySelector('.weather-banner')
+const weatherButton = document.querySelector('#weather-button')
+const tempMax = document.querySelector('#current-temp-max')
 const weatherIcon = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temperature');
 const currentWeatherDesc = document.querySelector('#current-description');
@@ -10,6 +13,7 @@ const fetchAPI = async () => {
         const response = await fetch(apiURL);
         if (response.ok) {
             const data = await response.json();
+            console.log(data);
             displayCurrentWeather(data);
         } else {
             throw Error(await response.text());
@@ -31,21 +35,35 @@ const fetchForecastAPI = async () => {
     }
 }
 
-const displayCurrentWeather = (data) => {
+// let fetchAPI = async (url) =>  {
+//     try {
+//         let response = await fetch(url);
+//         if (response.ok) {
+//             let data = await response.json();
+//             return data;
+//         } else {
+//             throw Error(await response.text());
+//         }
+//     } catch (error) {
+//     }
+// }
+
+let displayCurrentWeather = (data) => {
+    tempMax.innerHTML = `${data.main.temp_max.toFixed(0)} &deg;F`;
     currentTemp.innerHTML = `${data.main.temp.toFixed(0)} &deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     currentHumidity.textContent = `Humidity: ${data.main.humidity}%`;
 
-    let desc = data.weather[0].description;
+    const desc = data.weather[0].description;
     desc = desc.split(' ').map(capitalize).join(' ');
     currentWeatherDesc.textContent = `${desc}`;
-    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', currentWeatherDesc);
 }
 
 const displayForecast = (data) => {
     const nextDayForecast = data.list.filter(x => x.dt_txt.includes('15:00:00'));
-    let day = 0;
+    const day = 0;
     nextDayForecast.forEach(forecast => {
         document.querySelector(`#next-day-temp${day+1}`).innerHTML = forecast.main.temp_max.toFixed(0);
         document.querySelector(`#next-day-humidity${day+1}`).innerHTML = forecast.main.humidity;
@@ -53,9 +71,27 @@ const displayForecast = (data) => {
     });
 }
 
+const showBanner = () => {
+    weatherBanner.style.display = 'block';
+}
+
+const closeBanner = () => {
+    weatherBanner.style.display = 'none';
+}
+
+weatherButton.addEventListener('click', () => {
+    closeBanner();
+});
+
 const capitalize = (letter) => {
     return `${letter.charAt(0).toUpperCase()}${letter.slice(1)}`;
 }
+
+// let currentWeatherData = fetchAPI(apiURL);
+// console.log(currentWeatherData);
+// displayCurrentWeather(currentWeatherData);
+// let forecastWeatherData = fetchAPI(forecastURL);
+// displayForecast(forecastWeatherData);
 
 fetchAPI();
 fetchForecastAPI();

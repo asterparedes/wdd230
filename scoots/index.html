@@ -39,17 +39,25 @@
             </div>
         </header>
         <main> 
-           <div id="hero-content">
+            <div id="hero-content">
+                <div class="weather-banner">
+                    <button id="weather-button">❌</button>
+                    <p>High Temperature Today <span id="current-temp-max"></span></p>
+                </div>
                 <picture>
                     <source srcset="images/scoots-hero.webp" media="(max-width: 500px)">
                     <source srcset="images/scoots-hero-medium.webp" media="(max-width: 950px)">
                     <img src="images/scoots-hero-large.webp" alt="Beautiful Beach View at San Miguel de Cozumel" loading="lazy" width="1200" height="675">
                 </picture>
-                <a href="reservation.html">Rent a Ride</a>
-           </div>
-           <h2>Rental Services</h2>
+                <div class="hero-text">
+                    <h2>Adventure Awaits</h2>
+                    <p>Explore Cozumel with freedom and excitement.</p>
+                    <a href="reservation.html">Rent a Ride</a>
+                </div>
+            </div>
+            <h2>Rental Services</h2>
             <div id="rental-info"></div>
-           <section class="home-card">
+            <section class="home-card">
                 <h2>Weather</h2>
                 <div class="weather-info">
                     <h3>Cozumel</h3>
@@ -64,7 +72,7 @@
                         <p><span id="next-day-temp1"></span> &deg;F | Humidity: <span id="next-day-humidity1"></span>%</p>
                     </div>
                 </div>
-           </section>
+            </section>
         </main>
         <footer>
             <section class="office-hours">
@@ -88,6 +96,7 @@
             <p class="student-name">&copy;<span id="year"></span> Scoots | Aster Paredes Morales | WDD 230 Final Project</p>
         </footer>
         <script src="scripts/main.js"></script>
+        <script src="scripts/featured.js"></script>
         <script src="scripts/weather.js"></script>
     </body>
 </html>

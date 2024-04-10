@@ -1,5 +1,5 @@
 const rentalTable = document.querySelector('#rental-table');
-const rentalURL = '/scoots/data/services.json';
+const rentalURL = 'https://asterparedes.github.io/wdd230/scoots/data/services.json';
 
 const getRentalData = async () => {
     const response = await fetch(rentalURL);

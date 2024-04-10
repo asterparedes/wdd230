@@ -35,6 +35,12 @@
         grid-column: span 4;
     }
 
+    .hero-text {
+        top: 20%;
+        left: 20%;
+        font-size: 2rem;
+    }
+
     h2 {
         grid-column: 1 / 4;
     }
@@ -61,6 +67,10 @@
     }
 
     .student-name {
+        grid-column: span 3;
+    }
+
+    #rental-info {
         grid-column: span 3;
     }
 
