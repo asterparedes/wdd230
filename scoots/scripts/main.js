@@ -12,8 +12,8 @@ mobileButton.addEventListener('click', () => {
 
 modeButton.addEventListener('click', () => {
     if (modeButton.textContent.includes('🌑')) {
-        main.style.background = '#000';
-        main.style.color = '#fff';
+        main.style.background = 'black';
+        main.style.color = 'white';
         modeButton.textContent = '🌞';
     } else {
         main.style.background = '#E7F7F5';

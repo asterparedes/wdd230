@@ -1,102 +1,126 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Scoots Home Page</title>
-        <meta name="description" content="Home page welcomes visitors with important information and opportunities.">
-        <meta name="author" content="Aster Paredes Morales">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/medium.css">
-        <link rel="stylesheet" href="styles/larger.css">
-        <link rel="icon" href="images/favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
-        <meta property="og:title" content="Scoots Home Page">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://asterparedes.github.io/wdd230/scoots/images/scoots-logo-large.webp">
-        <meta property="og:url" content="https://asterparedes.github.io/wdd230/scoots">
-    </head>
-    <body>
-        <header>
-            <div class="main-logo">
-                <picture>
-                    <img src="images/scoots-logo.webp" alt="Scoots Logo" loading="lazy" width="200" height="200">
-                </picture>
-                <h1>Scoots</h1>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoots Home Page</title>
+    <meta name="description" content="The home page greets customers and provides important information regarding rentals, location, and weather.">
+    <meta name="author" content="Aster Paredes Morales">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Scoots Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://asterparedes.github.io/wdd230/scoots/images/scoots-logo-large.webp">
+    <meta property="og:url" content="https://asterparedes.github.io/wdd230/scoots">
+</head>
+<body>
+    <header>
+        <div class="main-logo">
+            <picture>
+                <img src="images/scoots-logo.webp" alt="Scoots Logo" loading="lazy" width="200" height="200">
+            </picture>
+            <h1>Scoots</h1>
+        </div>
+        <div id="mobile-menu"></div>
+        <nav class="main-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div id="mode">
+            🌑
+        </div>
+    </header>
+    <main>
+        <div id="hero-content">
+            <div class="weather-banner">
+                <button id="weather-button">❌</button>
+                <p>High Temperature <span id="current-temp-max"></span></p>
             </div>
-            <div id="mobile-menu"></div>
-            <nav class="main-menu">
-                <a href="index.html" class="active">Home</a>
-                <a href="rentals.html">Rentals</a>
-                <a href="reservation.html">Reservation</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <div id="mode">
-                🌑
+            <picture>
+                <source srcset="images/scoots-hero.webp" media="(max-width: 500px)">
+                <source srcset="images/scoots-hero-medium.webp" media="(max-width: 950px)">
+                <img src="images/scoots-hero-large.webp" alt="Beautiful Beach View at San Miguel de Cozumel"
+                    loading="lazy" width="1200" height="675">
+            </picture>
+            <div class="hero-text">
+                <h2>Adventure Awaits</h2>
+                <p>Explore Cozumel with freedom and excitement.</p>
+                <a href="reservation.html">Rent a Ride</a>
             </div>
-        </header>
-        <main> 
-            <div id="hero-content">
-                <div class="weather-banner">
-                    <button id="weather-button">❌</button>
-                    <p>High Temperature Today <span id="current-temp-max"></span></p>
+        </div>
+        <h2>Rental Services</h2>
+        <div id="rental-info"></div>
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <div class="weather-info">
+                <h3>Cozumel</h3>
+                <div class="current-weather">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="" loading="lazy" width="64" height="64">
+                    <p id="current-temperature"></p>
+                    <p><span id="current-description"></span> | <span id="current-humidity"></span></p>
                 </div>
-                <picture>
-                    <source srcset="images/scoots-hero.webp" media="(max-width: 500px)">
-                    <source srcset="images/scoots-hero-medium.webp" media="(max-width: 950px)">
-                    <img src="images/scoots-hero-large.webp" alt="Beautiful Beach View at San Miguel de Cozumel" loading="lazy" width="1200" height="675">
-                </picture>
-                <div class="hero-text">
-                    <h2>Adventure Awaits</h2>
-                    <p>Explore Cozumel with freedom and excitement.</p>
-                    <a href="reservation.html">Rent a Ride</a>
+                <h3>Weather Tomorrow</h3>
+                <div class="forecast">
+                    <p id="next-day1"></p>
+                    <p><span id="next-day-temp1"></span> &deg;F | Humidity: <span id="next-day-humidity1"></span>%</p>
                 </div>
             </div>
-            <h2>Rental Services</h2>
-            <div id="rental-info"></div>
-            <section class="home-card">
-                <h2>Weather</h2>
-                <div class="weather-info">
-                    <h3>Cozumel</h3>
-                    <div class="current-weather">
-                        <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="" loading="lazy" width="50px" height="50px">
-                        <p id="current-temperature"></p>
-                        <p><span id="current-description"></span> | <span id="current-humidity"></span></p>
-                    </div>
-                    <h3>Weather Tomorrow</h3>
-                    <div class="forecast">
-                        <p id="next-day1"></p>
-                        <p><span id="next-day-temp1"></span> &deg;F | Humidity: <span id="next-day-humidity1"></span>%</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <section class="office-hours">
-                <h3>WE'RE OPEN</h3>
-                <p>Monday - Sunday: 7am - 5pm</p>
-            </section>
-            <p>📞: (310) 456-7890</p>
-            <p>📩: message@scoots.com</p>
-            <div class="social">
-                <h3>Follow Us</h3>
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook-logo.webp" alt="fb icon" loading="lazy" width="64" height="64">
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                    <img src="images/linkedin-logo.webp" alt="linkedin icon" loading="lazy" width="64" height="64">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy" width="64" height="64">
-                </a>
-            </div>
-            <p class="student-name">&copy;<span id="year"></span> Scoots | Aster Paredes Morales | WDD 230 Final Project</p>
-        </footer>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/featured.js"></script>
-        <script src="scripts/weather.js"></script>
-    </body>
+        </section>
+        <section class="about-card">
+            <h2>About Cozumel Mexico</h2>
+            <p>Located off the eastern coast of Mexico's Yucatán Peninsula, Cozumel is a captivating island destination
+                renowned for its stunning natural beauty, rich history, and vibrant culture. Nestled in the
+                crystal-clear waters of the Caribbean Sea, Cozumel boasts pristine white-sand beaches, lush tropical
+                landscapes, and an abundance of marine life, making it a paradise for outdoor enthusiasts and nature
+                lovers alike.</p>
+            <p>Cozumel is world-famous for its spectacular coral reefs, including the renowned Palancar Reef and
+                Columbia Reef, which offer some of the best scuba diving and snorkeling opportunities in the world. Dive
+                beneath the surface and explore a mesmerizing underwater world teeming with colorful fish, coral
+                formations, and other fascinating marine creatures.</p>
+            <p>Beyond its remarkable natural attractions, Cozumel also boasts a rich cultural heritage dating back to
+                ancient Mayan times. Visitors can explore ancient Mayan ruins such as San Gervasio and El Cedral,
+                offering insights into the island's intriguing history and archaeological significance.</p>
+            <p>In addition to its outdoor adventures and historical sites, Cozumel offers a vibrant culinary scene, with
+                an array of restaurants serving delicious Mexican cuisine and fresh seafood dishes. Visitors can also
+                immerse themselves in the island's lively atmosphere by exploring bustling markets, colorful festivals,
+                and vibrant nightlife.</p>
+            <p>Whether you're seeking relaxation on the beach, thrilling water sports, or cultural exploration, Cozumel
+                offers something for every type of traveler. With its breathtaking scenery, warm hospitality, and
+                endless opportunities for adventure, Cozumel truly embodies the essence of a tropical paradise.</p>
+        </section>
+    </main>
+    <footer>
+        <section class="office-hours">
+            <h3>WE'RE OPEN</h3>
+            <p>Monday - Sunday: 7am - 5pm</p>
+        </section>
+        <p>📞: (310) 456-7890</p>
+        <p>📩: message@scoots.com</p>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-logo.webp" alt="fb icon" loading="lazy" width="64" height="64">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin-logo.webp" alt="linkedin icon" loading="lazy" width="64" height="64">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-logo.webp" alt="instagram icon" loading="lazy" width="64" height="64">
+            </a>
+        </div>
+        <p class="student-name">&copy;<span id="year"></span> Scoots | Aster Paredes Morales | WDD 230 Final Project</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/featured.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
 </html>

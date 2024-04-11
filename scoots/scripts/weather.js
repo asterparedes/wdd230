@@ -54,7 +54,7 @@ let displayCurrentWeather = (data) => {
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     currentHumidity.textContent = `Humidity: ${data.main.humidity}%`;
 
-    const desc = data.weather[0].description;
+    let desc = data.weather[0].description;
     desc = desc.split(' ').map(capitalize).join(' ');
     currentWeatherDesc.textContent = `${desc}`;
     weatherIcon.setAttribute('src', iconSrc);

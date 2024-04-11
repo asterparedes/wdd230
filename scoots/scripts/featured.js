@@ -18,6 +18,7 @@ const displayRental = (vehicle) => {
     let rentalCard = document.createElement('section');
     let rentalImage = document.createElement('img');
     let vehicleName = document.createElement('p');
+    let rentalLink = document.createElement('a');
 
     rentalImage.setAttribute('src', vehicle.image);
     rentalImage.setAttribute('alt', `${vehicle.name}`);
@@ -26,9 +27,12 @@ const displayRental = (vehicle) => {
     rentalImage.setAttribute('height', '100');
 
     vehicleName.textContent = vehicle.name;
+    rentalLink.textContent = 'Check More Rentals';
+    rentalLink.href = 'rentals.html';
 
     rentalCard.appendChild(rentalImage);
     rentalCard.appendChild(vehicleName);
+    rentalCard.appendChild(rentalLink);
 
     featuredRental.appendChild(rentalCard);
 }
