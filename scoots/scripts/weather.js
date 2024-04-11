@@ -13,7 +13,6 @@ const fetchAPI = async () => {
         const response = await fetch(apiURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayCurrentWeather(data);
         } else {
             throw Error(await response.text());
@@ -34,19 +33,6 @@ const fetchForecastAPI = async () => {
     } catch (error) {
     }
 }
-
-// let fetchAPI = async (url) =>  {
-//     try {
-//         let response = await fetch(url);
-//         if (response.ok) {
-//             let data = await response.json();
-//             return data;
-//         } else {
-//             throw Error(await response.text());
-//         }
-//     } catch (error) {
-//     }
-// }
 
 let displayCurrentWeather = (data) => {
     tempMax.innerHTML = `${data.main.temp_max.toFixed(0)} &deg;F`;
@@ -86,12 +72,6 @@ weatherButton.addEventListener('click', () => {
 const capitalize = (letter) => {
     return `${letter.charAt(0).toUpperCase()}${letter.slice(1)}`;
 }
-
-// let currentWeatherData = fetchAPI(apiURL);
-// console.log(currentWeatherData);
-// displayCurrentWeather(currentWeatherData);
-// let forecastWeatherData = fetchAPI(forecastURL);
-// displayForecast(forecastWeatherData);
 
 fetchAPI();
 fetchForecastAPI();

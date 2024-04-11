@@ -4,7 +4,6 @@ const rentalURL = 'https://asterparedes.github.io/wdd230/scoots/data/services.js
 const getRentalData = async () => {
     const response = await fetch(rentalURL);
     const data = await response.json();
-    console.log(data);
     displayTable(data.vehicles);
 }
 
