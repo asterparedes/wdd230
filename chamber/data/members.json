@@ -5,7 +5,7 @@
             "address": "555 E Hardy St, Inglewood, CA 90301",
             "phoneNumber": "(310) 673-4660",
             "website": "https://centinelamed.com",
-            "image": "images/CentinelaHospitalMedicalCenter.png",
+            "image": "images/centinela-hospital-medical-center.png",
             "membershipLevel": "Gold",
             "membershipStarted" : "2019"
         },
@@ -14,7 +14,7 @@
             "address": "4427 W El Segundo Blvd, Hawthorne, CA 90250",
             "phoneNumber": "(310) 263-1116",
             "website": "https://www.marriott.com",
-            "image": "images/cy_logo_L.png",
+            "image": "images/cy-logo.png",
             "membershipLevel": "Gold",
             "membershipStarted" : "2022"
         },
@@ -32,7 +32,7 @@
             "address": "933 N La Brea Ave, Inglewood, CA 90304",
             "phoneNumber": "(310) 419-9299",
             "website": "https://glowandflowbeauty.com/",
-            "image": "images/G_F_logo.png",
+            "image": "images/g-f-logo.png",
             "membershipLevel": "Bronze",
             "membershipStarted" : "2021"
         },
@@ -41,7 +41,7 @@
             "address": "515 S Figueroa St, Ste 2000, Los Angeles, CA 90071",
             "phoneNumber": "(213) 933-2103",
             "website": "https://www.clarkconstruction.com",
-            "image": "images/logo.png",
+            "image": "images/clark-construction-logo.png",
             "membershipLevel": "Silver"
         },
         {
@@ -49,7 +49,7 @@
             "address": "400 E Florence Ave, Inglewood, CA 90301",
             "phoneNumber": "(310) 671-6200",
             "website": "https://orleansandyorkdeli.com",
-            "image": "images/OrleansYork.Logo_.Black_.Gold_.png",
+            "image": "images/orleans-york-logo.png",
             "membershipLevel": "Bronze",
             "membershipStarted" : "2023"
         },
@@ -58,7 +58,7 @@
             "address": "101 W Walnut St, Ste 129, Gardena, CA 90248",
             "phoneNumber": "(310) 464-1540",
             "website": "https://www.steelelogistics.com",
-            "image": "images/gradient+logo.png",
+            "image": "images/gradient-logo.png",
             "membershipLevel": "Gold",
             "membershipStarted" : "2024"
         }
